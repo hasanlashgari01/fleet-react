@@ -30,6 +30,13 @@ export default {
         8: "#FCFCFD"
       }
     },
+    fontFamily: {
+      "DMSansBold": "DMSans Bold",
+      "PoppinsRegular": "Poppins Regular",
+      "PoppinsMedium": "Poppins Medium",
+      "PoppinsSemiBold": "Poppins SemiBold",
+      "PoppinsBold": "Poppins Bold",
+    }
   },
   plugins: []
 };
