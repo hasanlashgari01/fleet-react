@@ -5,7 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "2rem",
+          sm: "2.5rem",
+          md: "3.25rem",
+          lg: "5rem",
+          xl: "7.5rem",
+          "2xl": "10rem"
+        }
+      }
+    },
     colors: {
       primary: {
         1: "#3B71FE",
@@ -35,7 +47,16 @@ export default {
       "PoppinsRegular": "Poppins Regular",
       "PoppinsMedium": "Poppins Medium",
       "PoppinsSemiBold": "Poppins SemiBold",
-      "PoppinsBold": "Poppins Bold",
+      "PoppinsBold": "Poppins Bold"
+    },
+    screens: {
+      DEFAULT: "375px",
+      "xs": "480px",
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1440px"
     }
   },
   plugins: []
