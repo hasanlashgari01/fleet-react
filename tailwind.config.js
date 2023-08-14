@@ -57,6 +57,9 @@ export default {
       "lg": "1024px",
       "xl": "1280px",
       "2xl": "1440px"
+    },
+    boxShadow: {
+      "dropdown": "0px 40px 32px -24px rgba(15, 15, 15, 0.12)",
     }
   },
   plugins: [

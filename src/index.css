@@ -30,7 +30,7 @@
     }
 
     body {
-        @apply bg-neutral-8 dark:bg-neutral-1 font-PoppinsRegular;
+        @apply bg-neutral-8 dark:bg-neutral-1 font-PoppinsRegular scroll-smooth;
     }
 }
 
@@ -60,7 +60,6 @@
         @apply rotate-45 mt-0.5;
     }
 
-
     /* Nav Link */
     .nav__link {
         @apply inline-flex w-full py-4 font-PoppinsSemiBold text-2xl text-neutral-4 cursor-default transition-colors duration-300;
@@ -69,4 +68,43 @@
     .nav__link--active {
         @apply text-primary-1 transition-all;
     }
+
+    .dropdown--hide {
+        @apply translate-y-5 invisible opacity-0 scale-95 transition-all duration-300 ease-in;
+    }
+
+    .dropdown {
+        @apply md:absolute md:top-[60px] p-4 rounded-[20px] shadow-dropdown z-50 bg-neutral-8 dropdown--hide;
+    }
+
+    .dropdown--show {
+        @apply translate-y-0 visible opacity-100;
+    }
+
+    .dropdown-link {
+        @apply flex gap-x-3 py-3 pr-3 pl-5 text-neutral-4 text-sm/4 font-DMSansBold transition-all duration-200 ease-in;
+    }
+
+    .dropdown-link:hover {
+        @apply text-neutral-2;
+    }
+}
+
+/* Scroll bar styles */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
