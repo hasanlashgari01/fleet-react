@@ -74,7 +74,7 @@
     }
 
     .dropdown {
-        @apply md:absolute md:top-[60px] p-4 rounded-[20px] shadow-dropdown z-50 bg-neutral-8 dropdown--hide;
+        @apply md:absolute md:top-[60px] p-4 rounded-[20px] shadow-dropdown z-50 bg-neutral-8 dark:bg-neutral-2 dropdown--hide;
     }
 
     .dropdown--show {
@@ -82,11 +82,7 @@
     }
 
     .dropdown-link {
-        @apply flex gap-x-3 py-3 pr-3 pl-5 text-neutral-4 text-sm/4 font-DMSansBold transition-all duration-200 ease-in;
-    }
-
-    .dropdown-link:hover {
-        @apply text-neutral-2;
+        @apply flex gap-x-3 py-3 pr-3 pl-5 text-neutral-4 hover:text-neutral-2 dark:hover:text-neutral-6 text-sm/4 font-DMSansBold transition-all duration-200 ease-in;
     }
 }
 

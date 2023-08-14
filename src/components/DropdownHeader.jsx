@@ -24,7 +24,7 @@ function DropdownHeader({ title, icon, profile, children, layout, position }) {
     return (
         <>
             <span
-                className={`flex ${layout} items-center gap-x-2 py-1 text-neutral-4 hover:text-neutral-2 select-none`}
+                className={`flex ${layout} items-center gap-x-2 py-1 text-neutral-4 hover:text-neutral-2 dark:hover:text-neutral-6 select-none`}
                 ref={dropdownRef}
                 onClick={setIsDropdownOpen}
             >

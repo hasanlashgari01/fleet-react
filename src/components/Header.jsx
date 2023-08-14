@@ -14,9 +14,11 @@ function Header() {
                 <div className="flex">
                     <Link className="flex items-center gap-x-2">
                         <img src="/public/logo.svg" alt="Logo" className="w-8 md:w-9 h-8 md:h-9" />
-                        <span className="text-neutral-2 font-PoppinsSemiBold text-2xl md:text-[27px]">fleet</span>
+                        <span className="text-neutral-2 dark:text-neutral-8 font-PoppinsSemiBold text-2xl md:text-[27px]">
+                            fleet
+                        </span>
                     </Link>
-                    <span className="hidden md:inline-block mx-10 bg-neutral-6 w-[1px]"></span>
+                    <span className="hidden md:inline-block mx-10 bg-neutral-6 dark:bg-neutral-2 w-[1px]"></span>
                     <div className="relative hidden md:inline-flex cursor-default lg:cursor-pointer transition-colors">
                         <DropdownHeader icon="arrow-down-simple" title="Travelers" position="left-0">
                             <div className="grid grid-cols-1 w-[260px] child:items-center child:rounded-full">
@@ -50,13 +52,13 @@ function Header() {
                 </div>
                 {/* Right side */}
                 <div className="flex items-center gap-x-5 md:gap-x-6">
-                    <Link className="hidden 2xl:inline-block font-DMSansBold text-neutral-4 hover:text-neutral-2 text-sm/4 transition-colors">
+                    <Link className="hidden 2xl:inline-block font-DMSansBold text-neutral-4 hover:text-neutral-2 dark:hover:text-neutral-6 text-sm/4 transition-colors">
                         Support
                     </Link>
                     <div className="relative hidden 2xl:inline-flex cursor-pointer transition-colors">
                         <DropdownHeader icon="globe" title="Language" layout="flex-row-reverse" position="-left-8">
                             <div className="grid grid-cols-2 w-[260px] child:rounded-lg child:flex-col">
-                                <Link className="dropdown-link text-left max-w-24 bg-neutral-7">
+                                <Link className="dropdown-link text-left max-w-24 bg-neutral-7 dark:bg-neutral-1">
                                     English
                                     <span className="text-xs/5 font-PoppinsRegular font-normal text-neutral-5">
                                         United States
@@ -83,13 +85,13 @@ function Header() {
                             </div>
                         </DropdownHeader>
                     </div>
-                    <Link className="hidden md:inline-block px-4 py-3 hover:bg-neutral-2 font-DMSansBold text-neutral-2 hover:text-neutral-8 text-sm/4 border-2 border-neutral-6 hover:border-neutral-2 rounded-full transition-colors">
+                    <Link className="hidden md:inline-block px-4 py-3 hover:bg-neutral-2 font-DMSansBold text-neutral-2 hover:text-neutral-8 dark:text-neutral-8 text-sm/4 border-2 border-neutral-6 hover:border-neutral-2 dark:border-neutral-4 rounded-full transition-colors">
                         List your property
                     </Link>
                     <div className="relative p-2">
                         <DropdownHeader icon="notification" position="absolute -right-32">
                             <div className="w-[322px] pt-6 pb-4">
-                                <h1 className="p-4 pt-0 text-neutral-2 font-PoppinsSemiBold text-2xl">Notification</h1>
+                                <h1 className="p-4 pt-0 text-neutral-2 dark:text-neutral-8 font-PoppinsSemiBold text-2xl">Notification</h1>
                                 <div className="max-h-[285px] overflow-y-auto scroll-smooth">
                                     <div className="relative flex gap-6 p-4">
                                         <img
@@ -98,67 +100,10 @@ function Header() {
                                             alt="Profile"
                                         />
                                         <div>
-                                            <h3 className="text-neutral-1 font-PoppinsMedium font-medium text-base">
+                                            <h3 className="text-neutral-1 dark:text-neutral-8 font-PoppinsMedium font-medium text-base">
                                                 Kohaku Tora
                                             </h3>
-                                            <p className="text-neutral-3 font-PoppinsRegular font-normal text-sm/6">
-                                                just sent you a message
-                                            </p>
-                                            <div className="text-neutral-4 font-PoppinsRegular font-normal text-xs/5">
-                                                <span>1</span> minute ago
-                                            </div>
-                                        </div>
-                                        <span className="absolute top-1/2 right-4 w-3 h-3 bg-primary-1 rounded-3xl"></span>
-                                    </div>
-                                    <div className="relative flex gap-6 p-4">
-                                        <img
-                                            src="/public/images/Profile 1.jpg"
-                                            className="w-12 h-12 rounded-full object-cover"
-                                            alt="Profile"
-                                        />
-                                        <div>
-                                            <h3 className="text-neutral-1 font-PoppinsMedium font-medium text-base">
-                                                Kohaku Tora
-                                            </h3>
-                                            <p className="text-neutral-3 font-PoppinsRegular font-normal text-sm/6">
-                                                just sent you a message
-                                            </p>
-                                            <div className="text-neutral-4 font-PoppinsRegular font-normal text-xs/5">
-                                                <span>1</span> minute ago
-                                            </div>
-                                        </div>
-                                        <span className="absolute top-1/2 right-4 w-3 h-3 bg-primary-1 rounded-3xl"></span>
-                                    </div>
-                                    <div className="relative flex gap-6 p-4">
-                                        <img
-                                            src="/public/images/Profile 1.jpg"
-                                            className="w-12 h-12 rounded-full object-cover"
-                                            alt="Profile"
-                                        />
-                                        <div>
-                                            <h3 className="text-neutral-1 font-PoppinsMedium font-medium text-base">
-                                                Kohaku Tora
-                                            </h3>
-                                            <p className="text-neutral-3 font-PoppinsRegular font-normal text-sm/6">
-                                                just sent you a message
-                                            </p>
-                                            <div className="text-neutral-4 font-PoppinsRegular font-normal text-xs/5">
-                                                <span>1</span> minute ago
-                                            </div>
-                                        </div>
-                                        <span className="absolute top-1/2 right-4 w-3 h-3 bg-primary-1 rounded-3xl"></span>
-                                    </div>
-                                    <div className="relative flex gap-6 p-4">
-                                        <img
-                                            src="/public/images/Profile 1.jpg"
-                                            className="w-12 h-12 rounded-full object-cover"
-                                            alt="Profile"
-                                        />
-                                        <div>
-                                            <h3 className="text-neutral-1 font-PoppinsMedium font-medium text-base">
-                                                Kohaku Tora
-                                            </h3>
-                                            <p className="text-neutral-3 font-PoppinsRegular font-normal text-sm/6">
+                                            <p className="text-neutral-3 dark:text-neutral-6 font-PoppinsRegular font-normal text-sm/6">
                                                 just sent you a message
                                             </p>
                                             <div className="text-neutral-4 font-PoppinsRegular font-normal text-xs/5">
@@ -172,7 +117,10 @@ function Header() {
                         </DropdownHeader>
                     </div>
                     <div className="relative">
-                        <DropdownHeader profile="/public/images/Profile 1.jpg" position="fixed top-[120px] inset-0 shrink-0 md:left-auto md:right-24">
+                        <DropdownHeader
+                            profile="/public/images/Profile 1.jpg"
+                            position="fixed top-[120px] inset-0 shrink-0 md:left-auto md:right-24"
+                        >
                             <div className="grid grid-cols-1 md:w-[260px]">
                                 <div className="child:items-center child:rounded-full">
                                     <Link className="dropdown-link">
@@ -194,9 +142,7 @@ function Header() {
                                         Wishlists
                                     </Link>
                                 </div>
-
                                 <span className="h-[1px] w-full bg-neutral-6 my-4"></span>
-
                                 <div className="child:items-center child:rounded-full">
                                     <Link className="dropdown-link">
                                         <svg className="w-6 h-6">
@@ -211,12 +157,11 @@ function Header() {
                                         Host an experience
                                     </Link>
                                 </div>
-
                                 <div className="grid grid-cols-2 mt-4 gap-x-2">
                                     <span className="flex justify-center items-center py-3 px-4 bg-primary-1 text-neutral-8 rounded-full cursor-pointer">
                                         Account
                                     </span>
-                                    <span className="flex justify-center items-center py-3 px-4 text-neutral-2 border-2 border-neutral-6 rounded-full cursor-pointer">
+                                    <span className="flex justify-center items-center py-3 px-4 text-neutral-2 dark:text-neutral-8 border-2 border-neutral-6 dark:border-neutral-4 rounded-full cursor-pointer">
                                         Log out
                                     </span>
                                 </div>
