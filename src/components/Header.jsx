@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const isLinkActive = ({ isActive }) => isActive ? "nav__link nav__link--active" : "nav__link";
 
   return (
@@ -22,7 +24,6 @@ function Header() {
             </svg>
           </div>
         </div>
-
         {/* Right side */}
         <div className="flex items-center gap-x-5 md:gap-x-6">
           <Link className="hidden 2xl:inline-block font-DMSansBold text-neutral-4 hover:text-neutral-2 text-sm/4 transition-colors">Support</Link>
@@ -42,14 +43,12 @@ function Header() {
           <div>
             <img src="/public/images/Profile 1.jpg" alt="Avatar" className="w-8 md:w-10 h-8 md:h-10 rounded-full object-cover" />
           </div>
-
           {/* Hamburger Menu */}
-          <div className="hamburger"></div>
+          <div className={`hamburger ${isMenuOpen ? "hamburger--active" : ""}`} onClick={() => setIsMenuOpen(!isMenuOpen)}></div>
         </div>
       </div>
-
-      <div className="container fixed inset-0 top-[104px] flex md:hidden flex-col justify-between pt-16 pb-[44px] px-8">
-
+      {/* Mobile Nav */}
+      <div className={`container fixed top-[104px] flex md:hidden flex-col justify-between px-8 z-50 ${isMenuOpen ? "inset-0 visible opacity-100 pt-16 pb-[44px] transition-all ease-in duration-500" : "h-0 invisible opacity-0"}`}>
         <nav>
           <ul>
             <li><NavLink to="/" className={isLinkActive}>Travelers</NavLink></li>
@@ -59,9 +58,7 @@ function Header() {
             <li><NavLink to="/support" className={isLinkActive}>Support</NavLink></li>
           </ul>
         </nav>
-
-        <Link className="text-center px-6 py-4 hover:bg-neutral-2 font-DMSansBold text-neutral-2 hover:text-neutral-8 text-sm/4 border-2 border-neutral-6 hover:border-neutral-2 rounded-full transition-colors cursor-default">List your property</Link>
-
+        <Link className="shrink-0 text-center px-6 py-4 hover:bg-neutral-2 font-DMSansBold text-neutral-2 hover:text-neutral-8 text-sm/4 border-2 border-neutral-6 hover:border-neutral-2 rounded-full transition-colors cursor-default">List your property</Link>
       </div>
     </header>
   );
