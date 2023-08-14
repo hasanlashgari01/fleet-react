@@ -35,6 +35,7 @@
 }
 
 @layer components {
+    /* Hamburger */
     .hamburger {
         @apply md:hidden relative flex-shrink-0 w-8 h-8 rounded-full p-2;
     }
@@ -49,5 +50,14 @@
 
     .hamburger::after {
         @apply hamburger--line top-2/3;
+    }
+
+    /* Nav Link */
+    .nav__link {
+        @apply inline-flex w-full py-4 font-PoppinsSemiBold text-2xl text-neutral-4 cursor-default transition-colors duration-300;
+    }
+
+    .nav__link--active {
+        @apply text-primary-1 transition-all;
     }
 }

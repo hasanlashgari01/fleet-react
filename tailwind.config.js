@@ -59,5 +59,10 @@ export default {
       "2xl": "1440px"
     }
   },
-  plugins: []
+  plugins: [
+    function ({ addVariant }) {
+      addVariant("child", "& > *");
+      addVariant("child-hover", "& > *:hover");
+    },
+  ],
 };

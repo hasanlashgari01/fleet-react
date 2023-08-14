@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
+  const isLinkActive = ({ isActive }) => isActive ? "nav__link nav__link--active" : "nav__link";
+
   return (
     <header className="container pt-12 pb-6 md:py-5">
       <div className="flex justify-between items-center">
@@ -44,6 +46,22 @@ function Header() {
           {/* Hamburger Menu */}
           <div className="hamburger"></div>
         </div>
+      </div>
+
+      <div className="container fixed inset-0 top-[104px] flex md:hidden flex-col justify-between pt-16 pb-[44px] px-8">
+
+        <nav>
+          <ul>
+            <li><NavLink to="/" className={isLinkActive}>Travelers</NavLink></li>
+            <li><NavLink to="/flights" className={isLinkActive}>Flights</NavLink></li>
+            <li><NavLink to="/car-rental" className={isLinkActive}>Car rental</NavLink></li>
+            <li><NavLink to="/thins-todo" className={isLinkActive}>Thing to do</NavLink></li>
+            <li><NavLink to="/support" className={isLinkActive}>Support</NavLink></li>
+          </ul>
+        </nav>
+
+        <Link className="text-center px-6 py-4 hover:bg-neutral-2 font-DMSansBold text-neutral-2 hover:text-neutral-8 text-sm/4 border-2 border-neutral-6 hover:border-neutral-2 rounded-full transition-colors cursor-default">List your property</Link>
+
       </div>
     </header>
   );
