@@ -119,7 +119,7 @@ function Header() {
                     <div className="relative">
                         <DropdownHeader
                             profile="/public/images/Profile 1.jpg"
-                            position="fixed top-[120px] inset-0 shrink-0 md:left-auto md:right-24"
+                            position="fixed top-[120px] inset-0 bottom-auto shrink-0 md:h-fit md:left-auto md:right-24"
                         >
                             <div className="grid grid-cols-1 md:w-[260px]">
                                 <div className="child:items-center child:rounded-full">
@@ -142,7 +142,7 @@ function Header() {
                                         Wishlists
                                     </Link>
                                 </div>
-                                <span className="h-[1px] w-full bg-neutral-6 my-4"></span>
+                                <span className="h-[1px] w-full bg-neutral-6 dark:bg-neutral-3 my-4"></span>
                                 <div className="child:items-center child:rounded-full">
                                     <Link className="dropdown-link">
                                         <svg className="w-6 h-6">
@@ -213,7 +213,7 @@ function Header() {
                         </li>
                     </ul>
                 </nav>
-                <Link className="shrink-0 text-center px-6 py-4 hover:bg-neutral-2 font-DMSansBold text-neutral-2 hover:text-neutral-8 text-sm/4 border-2 border-neutral-6 hover:border-neutral-2 rounded-full transition-colors cursor-default">
+                <Link className="shrink-0 text-center px-6 py-4 hover:bg-neutral-2 font-DMSansBold text-neutral-2 hover:text-neutral-8 dark:text-neutral-8 text-sm/4 border-2 border-neutral-6 hover:border-neutral-2 dark:border-neutral-2 rounded-full transition-colors cursor-default">
                     List your property
                 </Link>
             </div>
