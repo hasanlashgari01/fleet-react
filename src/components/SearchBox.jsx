@@ -1,9 +1,20 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function SearchBox() {
+    const data = [
+        { title: "New York, NY" },
+        { title: "New York, Manhattan, New York, NY" },
+        { title: "New Zealand" },
+        { title: "New Smyrna Beach, FL" },
+        { title: "Newark, NJ" },
+    ];
+
+    const [searchValue, setSearchValue] = useState("");
+
     const searchBoxRef = useRef();
     const searchRef = useRef();
+    const searchModalRef = useRef();
 
     const isSearchLinkActive = ({ isActive }) => (isActive ? "search__link search__link--active" : "search__link");
 
@@ -70,6 +81,8 @@ function SearchBox() {
                                 type="text"
                                 placeholder="Location"
                                 className="w-full bg-transparent text-neutral-2 placeholder:text-neutral-2 font-PoppinsSemiBold text-lg lg:text-2xl outline-0"
+                                value={searchValue}
+                                onChange={(e) => setSearchValue(e.target.value)}
                                 onFocus={searchHandler}
                                 ref={searchRef}
                             />
@@ -83,57 +96,28 @@ function SearchBox() {
                         {/* Modal */}
                         <div
                             className={`absolute hidden flex-col w-full max-h-[306px] bottom-28 left-0 p-2 bg-neutral-8 shadow-dropdown rounded-3xl z-30 overflow-y-auto scroll-smooth`}
+                            ref={searchModalRef}
+                            onClick={(e) => setSearchValue(e.target.textContent)}
                         >
-                            <div className="group flex items-center gap-x-3 p-3 rounded-xl hover:bg-neutral-7 transition-colors duration-200">
-                                <span className="p-2 shrink-0 border border-neutral-6 rounded-full">
-                                    <svg className="w-4 h-4">
-                                        <use href="#route"></use>
-                                    </svg>
-                                </span>
-                                <span className="flex-1 text-neutral-4 group-hover:text-neutral-2 font-PoppinsMedium text-base">
-                                    New York, NY
-                                </span>
-                            </div>
-                            <div className="flex items-center gap-x-3 p-3">
-                                <span className="p-2 shrink-0 border border-neutral-6 rounded-full">
-                                    <svg className="w-4 h-4">
-                                        <use href="#route"></use>
-                                    </svg>
-                                </span>
-                                <span className="flex-1 text-neutral-4 font-PoppinsMedium text-base">New York, NY</span>
-                            </div>
-                            <div className="flex items-center gap-x-3 p-3">
-                                <span className="p-2 shrink-0 border border-neutral-6 rounded-full">
-                                    <svg className="w-4 h-4">
-                                        <use href="#route"></use>
-                                    </svg>
-                                </span>
-                                <span className="flex-1 text-neutral-4 font-PoppinsMedium text-base">New York, NY</span>
-                            </div>
-                            <div className="flex items-center gap-x-3 p-3">
-                                <span className="p-2 shrink-0 border border-neutral-6 rounded-full">
-                                    <svg className="w-4 h-4">
-                                        <use href="#route"></use>
-                                    </svg>
-                                </span>
-                                <span className="flex-1 text-neutral-4 font-PoppinsMedium text-base">New York, NY</span>
-                            </div>
-                            <div className="flex items-center gap-x-3 p-3">
-                                <span className="p-2 shrink-0 border border-neutral-6 rounded-full">
-                                    <svg className="w-4 h-4">
-                                        <use href="#route"></use>
-                                    </svg>
-                                </span>
-                                <span className="flex-1 text-neutral-4 font-PoppinsMedium text-base">New York, NY</span>
-                            </div>
-                            <div className="flex items-center gap-x-3 p-3">
-                                <span className="p-2 shrink-0 border border-neutral-6 rounded-full">
-                                    <svg className="w-4 h-4">
-                                        <use href="#route"></use>
-                                    </svg>
-                                </span>
-                                <span className="flex-1 text-neutral-4 font-PoppinsMedium text-base">New York, NY</span>
-                            </div>
+                            {data.length > 0 ? (
+                                data.map((item, index) => (
+                                    <div
+                                        className="group flex items-center gap-x-3 p-3 rounded-xl hover:bg-neutral-7 transition-colors duration-200"
+                                        key={index}
+                                    >
+                                        <span className="p-2 shrink-0 border border-neutral-6 rounded-full">
+                                            <svg className="w-4 h-4">
+                                                <use href="#route"></use>
+                                            </svg>
+                                        </span>
+                                        <span className="flex-1 text-neutral-4 group-hover:text-neutral-2 font-PoppinsMedium text-base">
+                                            {item.title}
+                                        </span>
+                                    </div>
+                                ))
+                            ) : (
+                                <h1>City nof found</h1>
+                            )}
                         </div>
                     </div>
 
