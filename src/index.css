@@ -93,7 +93,7 @@
         background-image: url("/public/images/hero-mobile.jpg");
         transform: scalex(-1);
     }
-    
+
     .hero-tablet {
         background-image: url("/public/images/hero-small.png");
         transform: scalex(1);
@@ -102,6 +102,14 @@
 
     .hero-laptop {
         background-image: url("/public/images/hero-big.png");
+    }
+
+    .search__link {
+        @apply shrink-0 text-neutral-4 font-DMSansBold text-sm/4;
+    }
+
+    .search__link--active {
+        @apply text-neutral-2;
     }
 }
 
