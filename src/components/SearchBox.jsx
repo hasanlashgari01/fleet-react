@@ -11,10 +11,15 @@ function SearchBox() {
     ];
 
     const [searchValue, setSearchValue] = useState("");
+    const [travelers, setTravelers] = useState({ adults: 0, children: 0, adults: 0 });
+    const [result, setResult] = useState("Travelers");
+
+    console.log(travelers.adults);
 
     const searchBoxRef = useRef();
     const searchRef = useRef();
     const searchModalRef = useRef();
+    const travelersRef = useRef();
 
     const isSearchLinkActive = ({ isActive }) => (isActive ? "search__link search__link--active" : "search__link");
 
@@ -44,6 +49,14 @@ function SearchBox() {
                 searchRef.current.parentElement.nextElementSibling.classList.add("hidden");
             }
         });
+    };
+
+    const travelersHandler = () => {
+        if (travelers.adults + travelers.children + travelers.infants == 0) {
+            setResult("Travelers");
+        } else {
+            setResult(travelers.adults + travelers.children + travelers.infants);
+        }
     };
 
     return (
@@ -82,7 +95,6 @@ function SearchBox() {
                                 placeholder="Location"
                                 className="w-full bg-transparent text-neutral-2 placeholder:text-neutral-2 font-PoppinsSemiBold text-lg lg:text-2xl outline-0"
                                 value={searchValue}
-                                onChange={(e) => setSearchValue(e.target.value)}
                                 onFocus={searchHandler}
                                 ref={searchRef}
                             />
@@ -120,7 +132,6 @@ function SearchBox() {
                             )}
                         </div>
                     </div>
-
                     <div className="grid grid-cols-1 xs:grid-cols-2 col-span-2">
                         <div className="flex items-start gap-x-4 p-2 lg:p-4">
                             <svg className="w-6 h-6 shrink-0 text-neutral-5">
@@ -171,6 +182,9 @@ function SearchBox() {
                                 type="text"
                                 placeholder="Travelers"
                                 className="w-full bg-transparent text-neutral-2 placeholder:text-neutral-2 font-PoppinsSemiBold text-lg lg:text-2xl outline-0"
+                                value={travelers.sum + " guests"}
+                                onFocus={travelersHandler}
+                                ref={travelersRef}
                             />
                             <label
                                 htmlFor="travelers"
