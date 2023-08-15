@@ -84,6 +84,25 @@
     .dropdown-link {
         @apply flex gap-x-3 py-3 pr-3 pl-5 text-neutral-4 hover:text-neutral-2 dark:hover:text-neutral-6 text-sm/4 font-DMSansBold transition-all duration-200 ease-in;
     }
+
+    #hero {
+        @apply hero-mobile lg:hero-tablet 2xl:hero-laptop;
+    }
+
+    .hero-mobile {
+        background-image: url("/public/images/hero-mobile.jpg");
+        transform: scalex(-1);
+    }
+    
+    .hero-tablet {
+        background-image: url("/public/images/hero-small.png");
+        transform: scalex(1);
+        background-position: center center;
+    }
+
+    .hero-laptop {
+        background-image: url("/public/images/hero-big.png");
+    }
 }
 
 /* Scroll bar styles */
