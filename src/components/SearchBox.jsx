@@ -84,7 +84,7 @@ function SearchBox() {
             {/* Footer */}
             <div className="relative">
                 <div className="grid grid-cols-1 xs:grid-cols-2 2xl:grid-cols-4 h-fit">
-                    <div className="relative flex items-start gap-x-4 p-2 lg:p-4 order-first">
+                    <div className="group relative flex items-start gap-x-4 p-2 lg:p-4 order-first">
                         <svg className="w-6 h-6 shrink-0 text-neutral-5">
                             <use href="#location-arrow"></use>
                         </svg>
@@ -107,14 +107,14 @@ function SearchBox() {
                         </div>
                         {/* Modal */}
                         <div
-                            className={`absolute hidden flex-col w-full xs:w-80 max-h-[306px] bottom-28 left-0 p-2 bg-neutral-8 shadow-dropdown rounded-3xl z-30 overflow-y-auto scroll-smooth`}
+                            className={`absolute hidden flex-col w-full xs:w-80 lg:w-[508px] max-h-[306px] bottom-28 left-0 p-2 bg-neutral-8 shadow-dropdown rounded-3xl z-30 overflow-y-auto scroll-smooth`}
                             ref={searchModalRef}
                             onClick={(e) => setSearchValue(e.target.textContent)}
                         >
                             {data.length > 0 ? (
                                 data.map((item, index) => (
                                     <div
-                                        className="group flex items-center gap-x-3 p-3 rounded-xl hover:bg-neutral-7 transition-colors duration-200"
+                                        className="group flex items-center gap-x-3 p-3 rounded-xl hover:bg-neutral-7 transition-colors duration-200 cursor-default"
                                         key={index}
                                     >
                                         <span className="p-2 shrink-0 border border-neutral-6 rounded-full">
