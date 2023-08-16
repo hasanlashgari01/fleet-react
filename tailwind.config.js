@@ -44,6 +44,7 @@ export default {
                 },
                 gradient: {
                     1: "#ecf8fc",
+                    2: "#fcfcfd",
                 },
             },
             boxShadow: {

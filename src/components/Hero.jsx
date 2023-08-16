@@ -11,9 +11,7 @@ function Hero() {
                     <p className="mb-6 lg:w-fit text-neutral-2 text-center font-PoppinsMedium text-base">
                         Find and book a great experience.
                     </p>
-                    <span className="inline-flex mx-auto lg:mx-0 lg:w-fit py-4 px-6 bg-primary-1 text-neutral-8 font-DMSansBold text-base/4 rounded-full">
-                        Start your search
-                    </span>
+                    <span className="search-btn mx-auto">Start your search</span>
                 </div>
                 <div
                     id="hero"
