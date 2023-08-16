@@ -69,7 +69,7 @@ function Adventure() {
                         </SwiperSlide>
                     );
                 })}
-                <div className="text-center mt-8 lg:mt-12 -ml-12 space-x-2">
+                <div className="text-center mt-8 lg:mt-12 space-x-2">
                     <button
                         className="image-swiper-button-prev border-2 border-transparent hover:border-neutral-6 disabled:border-none rounded-full transition-all duration-300 disabled:opacity-50"
                         disabled
