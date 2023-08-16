@@ -107,7 +107,7 @@ function SearchBox() {
                         </div>
                         {/* Modal */}
                         <div
-                            className={`absolute hidden flex-col w-full max-h-[306px] bottom-28 left-0 p-2 bg-neutral-8 shadow-dropdown rounded-3xl z-30 overflow-y-auto scroll-smooth`}
+                            className={`absolute hidden flex-col w-full xs:w-80 max-h-[306px] bottom-28 left-0 p-2 bg-neutral-8 shadow-dropdown rounded-3xl z-30 overflow-y-auto scroll-smooth`}
                             ref={searchModalRef}
                             onClick={(e) => setSearchValue(e.target.textContent)}
                         >
@@ -122,7 +122,7 @@ function SearchBox() {
                                                 <use href="#route"></use>
                                             </svg>
                                         </span>
-                                        <span className="flex-1 text-neutral-4 group-hover:text-neutral-2 font-PoppinsMedium text-base">
+                                        <span className="flex-1 text-neutral-4 group-hover:text-neutral-2 font-PoppinsMedium text-base line-clamp-1">
                                             {item.title}
                                         </span>
                                     </div>
