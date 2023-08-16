@@ -18,11 +18,9 @@ function Adventure() {
         <div className="pt-8 2xl:pt-14 pb-16 2xl:pb-[136px] px-4">
             <SectionTop title="Let’s go on an adventure" description="Find and book a great experience." />
             <Swiper
+                slidesPerView={1}
+                spaceBetween={16}
                 breakpoints={{
-                    375: {
-                        slidesPerView: 1.2,
-                        spaceBetween: 16,
-                    },
                     480: {
                         slidesPerView: 1.2,
                         spaceBetween: 20,
@@ -56,7 +54,7 @@ function Adventure() {
                     return (
                         <SwiperSlide key={index}>
                             <div className="flex items-center gap-x-4 w-full p-4 pr-6 select-none">
-                                <img src={item.image} className="object-cover h-28 lg:h-40" alt="" />
+                                <img src={item.image} className="object-cover h-20 DEFAULT:h-28 lg:h-40" alt="" />
                                 <div>
                                     <h4 className="h-12 text-neutral-2 font-PoppinsMedium text-base line-clamp-2">
                                         {item.title}
