@@ -38,7 +38,10 @@ function SearchBox() {
     };
 
     const searchHandler = () => {
-        searchRef.current.parentElement.nextElementSibling.classList.remove("hidden");
+        setSearchValue(searchRef.current.value);
+        if (searchRef.current.value.length > 2) {
+            searchRef.current.parentElement.nextElementSibling.classList.remove("hidden");
+        }
         hideModal();
     };
 
@@ -95,7 +98,7 @@ function SearchBox() {
                                 placeholder="Location"
                                 className="w-full bg-transparent text-neutral-2 placeholder:text-neutral-2 font-PoppinsSemiBold text-lg lg:text-2xl outline-0"
                                 value={searchValue}
-                                onFocus={searchHandler}
+                                onChange={searchHandler}
                                 ref={searchRef}
                             />
                             <label
