@@ -1,5 +1,6 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
+import Guest from "./Guest";
 
 function SearchBox() {
     const data = [
@@ -11,17 +12,26 @@ function SearchBox() {
     ];
 
     const [searchValue, setSearchValue] = useState("");
-    const [travelers, setTravelers] = useState({ adults: 0, children: 0, adults: 0 });
-    const [result, setResult] = useState("Travelers");
-
-    console.log(travelers.adults);
+    const [travelers, setTravelers] = useState({ adults: 0, children: 0, infants: 0 });
+    const [result, setResult] = useState(travelers.adults + travelers.children + travelers.infants);
 
     const searchBoxRef = useRef();
     const searchRef = useRef();
-    const searchModalRef = useRef();
-    const travelersRef = useRef();
+    const guestRef = useRef();
+
+    useEffect(() => {
+        if (travelers.adults + travelers.children + travelers.infants == 0) {
+            setResult("Travelers");
+        } else {
+            setResult(travelers.adults + travelers.children + travelers.infants + " " + "quest");
+        }
+    }, [travelers]);
 
     const isSearchLinkActive = ({ isActive }) => (isActive ? "search__link search__link--active" : "search__link");
+
+    const searchHandler = () => {
+        showModal(searchRef.current);
+    };
 
     const linkHandler = (e) => {
         searchRef.current.querySelector(".search__link--active").classList.remove("search__link--active");
@@ -37,35 +47,39 @@ function SearchBox() {
         line.style.left = `${activeLinkPosition}px`;
     };
 
-    const searchHandler = () => {
-        setSearchValue(searchRef.current.value);
-        if (searchRef.current.value.length > 2) {
-            searchRef.current.parentElement.nextElementSibling.classList.remove("hidden");
-        }
-        hideModal();
+    const guestHandler = () => {
+        showModal(guestRef.current);
     };
 
-    const hideModal = () => {
+    function showModal(elem) {
+        elem.parentElement.nextElementSibling.classList.remove("hidden");
+        elem.parentElement.nextElementSibling.classList.add("flex");
+        hideModal(elem);
+    }
+
+    const hideModal = (elem) => {
         window.addEventListener("click", (e) => {
-            if (searchRef.current && !searchRef.current.contains(e.target)) {
-                searchRef.current.parentElement.nextElementSibling.classList.remove("flex");
-                searchRef.current.parentElement.nextElementSibling.classList.add("hidden");
+            if (elem && !elem.contains(e.target)) {
+                elem.parentElement.nextElementSibling.classList.remove("flex");
+                elem.parentElement.nextElementSibling.classList.add("hidden");
             }
         });
     };
 
-    const travelersHandler = () => {
-        if (travelers.adults + travelers.children + travelers.infants == 0) {
-            setResult("Travelers");
-        } else {
-            setResult(travelers.adults + travelers.children + travelers.infants);
+    const increaseHandler = (name) => {
+        setTravelers({ ...travelers, [name]: travelers[name] + 1 });
+    };
+
+    const decreaseHandler = (name) => {
+        if (travelers[name] > 0) {
+            setTravelers({ ...travelers, [name]: travelers[name] - 1 });
         }
     };
 
     return (
         <div className="absolute inset-x-1 lg:inset-x-10 2xl:inset-x-20 top-[80%] p-5 lg:p-10 bg-gradient-to-br from-neutral-8 from-0% to-neutral-8/[83%] to-100% border border-neutral-8 backdrop-blur-lg shadow-dropdown rounded-[20px] z-50">
             {/* Header */}
-            <div className="mb-6">
+            <div className="mb-6 z-50">
                 <nav className="flex gap-x-8 w-full" ref={searchBoxRef}>
                     <span to="/" className="search__link search__link--active" onClick={(e) => linkHandler(e)}>
                         Stays
@@ -87,7 +101,7 @@ function SearchBox() {
             {/* Footer */}
             <div className="relative">
                 <div className="grid grid-cols-1 xs:grid-cols-2 2xl:grid-cols-4 h-fit">
-                    <div className="group relative flex items-start gap-x-4 p-2 lg:p-4 order-first">
+                    <div className="relative flex items-start gap-x-4 p-2 lg:p-4 order-first">
                         <svg className="w-6 h-6 shrink-0 text-neutral-5">
                             <use href="#location-arrow"></use>
                         </svg>
@@ -98,7 +112,8 @@ function SearchBox() {
                                 placeholder="Location"
                                 className="w-full bg-transparent text-neutral-2 placeholder:text-neutral-2 font-PoppinsSemiBold text-lg lg:text-2xl outline-0"
                                 value={searchValue}
-                                onChange={searchHandler}
+                                onClick={searchHandler}
+                                onChange={(e) => setSearchValue(e.target.value)}
                                 ref={searchRef}
                             />
                             <label
@@ -110,8 +125,7 @@ function SearchBox() {
                         </div>
                         {/* Modal */}
                         <div
-                            className={`absolute hidden flex-col w-full xs:w-80 lg:w-[508px] max-h-[306px] bottom-28 left-0 p-2 bg-neutral-8 shadow-dropdown rounded-3xl z-30 overflow-y-auto scroll-smooth`}
-                            ref={searchModalRef}
+                            className="absolute hidden flex-col w-full xs:w-80 lg:w-[508px] max-h-[306px] bottom-28 left-0 p-2 bg-neutral-8 shadow-dropdown rounded-3xl z-30 overflow-y-auto scroll-smooth"
                             onClick={(e) => setSearchValue(e.target.textContent)}
                         >
                             {data.length > 0 ? (
@@ -175,7 +189,7 @@ function SearchBox() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex items-start gap-x-4 p-2 lg:p-4 xs:order-first 2xl:order-last">
+                    <div className="relative flex items-start gap-x-4 p-2 lg:p-4 xs:order-first 2xl:order-last">
                         <svg className="w-6 h-6 shrink-0 text-neutral-5">
                             <use href="#user"></use>
                         </svg>
@@ -185,9 +199,10 @@ function SearchBox() {
                                 type="text"
                                 placeholder="Travelers"
                                 className="w-full bg-transparent text-neutral-2 placeholder:text-neutral-2 font-PoppinsSemiBold text-lg lg:text-2xl outline-0"
-                                value={travelers.sum + " guests"}
-                                onFocus={travelersHandler}
-                                ref={travelersRef}
+                                value={result}
+                                onClick={guestHandler}
+                                ref={guestRef}
+                                readOnly
                             />
                             <label
                                 htmlFor="travelers"
@@ -195,6 +210,27 @@ function SearchBox() {
                             >
                                 Add guests
                             </label>
+                        </div>
+                        {/* Modal */}
+                        <div className="absolute hidden flex-col space-y-6 w-[426px] lg:w-[508px] h-[294px] bottom-24 right-0 p-10 bg-neutral-8 shadow-dropdown rounded-3xl z-30">
+                            <Guest
+                                traveler="adults"
+                                count={travelers.adults}
+                                increase={increaseHandler}
+                                decrease={decreaseHandler}
+                            />
+                            <Guest
+                                traveler="children"
+                                count={travelers.children}
+                                increase={increaseHandler}
+                                decrease={decreaseHandler}
+                            />
+                            <Guest
+                                traveler="infants"
+                                count={travelers.infants}
+                                increase={increaseHandler}
+                                decrease={decreaseHandler}
+                            />
                         </div>
                     </div>
                 </div>
