@@ -18,8 +18,6 @@ function Adventure() {
         <div className="pt-8 2xl:pt-14 pb-16 2xl:pb-[136px] px-4">
             <SectionTop />
             <Swiper
-                slidesPerView={3}
-                spaceBetween={32}
                 breakpoints={{
                     375: {
                         slidesPerView: 1.2,
@@ -52,7 +50,6 @@ function Adventure() {
                     disabledClass: "swiper-button-disabled",
                 }}
                 modules={[Navigation]}
-                
                 className="my-8 m-4 lg:m-20 xl:mx-40 overflow-hidden"
             >
                 {data.map((item, index) => {
@@ -72,8 +69,11 @@ function Adventure() {
                         </SwiperSlide>
                     );
                 })}
-                <div className="text-center mt-8 lg:mt-12 -ml-12 space-x-2" >
-                    <button className="image-swiper-button-prev border-2 border-transparent hover:border-neutral-6 disabled:border-none rounded-full transition-all duration-300 disabled:opacity-50" disabled>
+                <div className="text-center mt-8 lg:mt-12 -ml-12 space-x-2">
+                    <button
+                        className="image-swiper-button-prev border-2 border-transparent hover:border-neutral-6 disabled:border-none rounded-full transition-all duration-300 disabled:opacity-50"
+                        disabled
+                    >
                         <svg className="w-10 h-10 p-2">
                             <use href="#arrow-left"></use>
                         </svg>
