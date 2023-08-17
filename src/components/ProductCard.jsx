@@ -3,9 +3,9 @@ import SectionTop from "./SectionTop";
 
 function ProductCard() {
     return (
-        <div className="container space-y-12 py-16 lg:py-10 2xl:py-20 bg-neutral-7">
+        <div className="container space-y-12 py-16 lg:py-10 2xl:py-20 bg-neutral-7 rounded-3xl">
             <SectionTop title="Go somewhere" description="Let’s go on an adventure" />
-            <div className="grid gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
                 {[1, 2, 3, 4, 5, 6, 7, 8].map((product, index) => (
                     <Product
                         key={index}
