@@ -25,6 +25,11 @@ export default {
                     2: "#8BC5E5",
                     3: "#92A5EF",
                     4: "#58C27D",
+                    7: "#FFD166",
+                    8: "#CDB4DB",
+                    9: "#FABDC1",
+                    10: "#9AC8FF",
+                    11: "#DCB9F0",
                 },
                 secondary: {
                     1: "#A4CDE3",
@@ -49,6 +54,9 @@ export default {
             },
             boxShadow: {
                 dropdown: "0px 40px 32px -24px rgba(15, 15, 15, 0.12)",
+            },
+            rotate: {
+                15: "15deg",
             },
         },
         fontFamily: {

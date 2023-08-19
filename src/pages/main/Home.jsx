@@ -1,6 +1,7 @@
 import Hero from "../../components/Hero";
 import Adventure from "../../components/Adventure";
 import About from "../../components/About";
+import HowItWorked from "../../components/HowItWorked";
 import ProductCard from "../../components/ProductCard";
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
             <Hero />
             <Adventure />
             <About />
+            <HowItWorked />
             <ProductCard />
         </>
     );
