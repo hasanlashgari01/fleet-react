@@ -34,8 +34,16 @@ function ProductCard() {
                             Sub nav
                         </span>
                     </ul>
-                    <FilterDropdown title="Featured" isHidden={true} />
-                    <FilterDropdown title="Recently added" />
+                    <FilterDropdown title="Featured" isHidden={true}>
+                        <span className="py-2.5 px-3.5">Featured</span>
+                        <span className="py-2.5 px-3.5">Family-friendly</span>
+                        <span className="py-2.5 px-3.5">On sale</span>
+                        <span className="py-2.5 px-3.5">Sub nav</span>
+                    </FilterDropdown>
+                    <FilterDropdown title="Recently added">
+                        <span className="py-2.5 px-3.5">Recently added</span>
+                        <span className="py-2.5 px-3.5">Long added</span>
+                    </FilterDropdown>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8 mt-12">
                     {[1, 2, 3, 4, 5, 6, 7, 8].map((product, index) => (
