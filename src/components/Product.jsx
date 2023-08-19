@@ -1,7 +1,13 @@
 function Product({ title, subTitle, price, offPrice, startDate, endDate, score }) {
     return (
-        <div className="w-[267px] mx-auto bg-neutral-8 rounded-2xl overflow-hidden">
-            <img src="/public/images/products/Product-2.jpg" alt="" className="w-full h-56 object-cover" />
+        <div className="group w-[267px] mx-auto bg-neutral-8 rounded-2xl overflow-hidden">
+            <div className="w-full h-56 overflow-hidden">
+                <img
+                    src="/public/images/products/Product-2.jpg"
+                    alt=""
+                    className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-1000"
+                />
+            </div>
             <div className="p-5">
                 <div className="flex justify-between">
                     <div className="w-[151px]">

@@ -4,7 +4,7 @@ import SectionTop from "./SectionTop";
 
 function ProductCard() {
     return (
-        <div className="container space-y-12 py-16 lg:py-10 2xl:py-20 bg-neutral-7 rounded-3xl">
+        <div className="sm:container space-y-12 py-16 lg:py-10 2xl:py-20 bg-neutral-7 rounded-3xl">
             <SectionTop title="Go somewhere" description="Let’s go on an adventure" />
             <div>
                 <div className="flex flex-wrap gap-4 justify-between items-center">

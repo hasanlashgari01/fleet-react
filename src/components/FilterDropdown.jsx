@@ -5,7 +5,7 @@ function FilterDropdown({ title, isHidden, children }) {
 
     return (
         <div
-            className={`relative w-full xs:w-64 flex max-lg:flex-auto bg-neutral-8 border-2 border-neutral-6 rounded-xl cursor-pointer select-none ${
+            className={`relative w-full xs:w-64 max-lg:mx-8 flex max-lg:flex-auto bg-neutral-8 border-2 border-neutral-6 rounded-xl cursor-pointer select-none ${
                 isHidden ? "lg:hidden" : ""
             }`}
         >
@@ -21,7 +21,7 @@ function FilterDropdown({ title, isHidden, children }) {
                 </span>
             </div>
             <div
-                className={`absolute w-full h-fit top-full left-0 mt-1 origin-top transition-all duration-200 ease-linear ${
+                className={`absolute w-full h-fit top-full left-0 mt-1 origin-top transition-all duration-200 ease-linear z-40 ${
                     isDropdown ? "visible opacity-100 translate-y-0" : "invisible opacity-0 -translate-y-2"
                 }`}
             >
