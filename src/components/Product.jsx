@@ -1,7 +1,7 @@
 function Product({ title, subTitle, price, offPrice, startDate, endDate, score }) {
     return (
-        <div className="bg-neutral-8 rounded-2xl overflow-hidden">
-            <img src="" alt="" />
+        <div className="w-[267px] mx-auto bg-neutral-8 rounded-2xl overflow-hidden">
+            <img src="/public/images/products/Product-2.jpg" alt="" className="w-full h-56 object-cover" />
             <div className="p-5">
                 <div className="flex justify-between">
                     <div className="w-[151px]">
