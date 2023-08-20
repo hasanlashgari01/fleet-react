@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import DropdownHeader from "./DropdownHeader.jsx";
+import DropdownHeader from "../components/DropdownHeader.jsx";
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ function Header() {
                 {/* Left side */}
                 <div className="flex">
                     <Link className="flex items-center gap-x-2">
-                        <img src="/public/logo.svg" alt="Logo" className="w-8 md:w-9 h-8 md:h-9" />
+                        <img src="./src/assets/logo.svg" alt="Logo" className="w-8 md:w-9 h-8 md:h-9" />
                         <span className="text-neutral-2 dark:text-neutral-8 font-PoppinsSemiBold text-2xl md:text-[27px]">
                             fleet
                         </span>
@@ -91,11 +91,13 @@ function Header() {
                     <div className="relative p-2">
                         <DropdownHeader icon="notification" position="absolute -right-32">
                             <div className="w-[322px] pt-6 pb-4">
-                                <h1 className="p-4 pt-0 text-neutral-2 dark:text-neutral-8 font-PoppinsSemiBold text-2xl">Notification</h1>
+                                <h1 className="p-4 pt-0 text-neutral-2 dark:text-neutral-8 font-PoppinsSemiBold text-2xl">
+                                    Notification
+                                </h1>
                                 <div className="max-h-[285px] overflow-y-auto scroll-smooth">
                                     <div className="relative flex gap-6 p-4">
                                         <img
-                                            src="/public/images/Profile 1.jpg"
+                                            src="/src/assets/images/Profile-1.jpg"
                                             className="w-12 h-12 rounded-full object-cover"
                                             alt="Profile"
                                         />
@@ -118,7 +120,7 @@ function Header() {
                     </div>
                     <div className="relative">
                         <DropdownHeader
-                            profile="/public/images/Profile 1.jpg"
+                            profile="/src/assets/images/Profile-1.jpg"
                             position="fixed top-[120px] inset-0 bottom-auto shrink-0 md:h-fit md:left-auto md:right-24"
                         >
                             <div className="grid grid-cols-1 md:w-[260px]">

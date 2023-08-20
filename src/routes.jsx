@@ -1,4 +1,4 @@
-import Home from "./pages/main/Home";
+import Home from "./pages/home/Home";
 
 const routes = [{ path: "/", element: <Home /> }];
 

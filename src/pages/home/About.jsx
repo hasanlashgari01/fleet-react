@@ -1,6 +1,6 @@
-import AboutFeature from "./AboutFeature";
-import SectionTop from "./SectionTop";
-import UserReview from "./UserReview";
+import AboutFeature from "../../components/AboutFeature";
+import SectionTop from "../../components/SectionTop";
+import UserReview from "../../components/UserReview";
 
 function About() {
     return (
@@ -36,7 +36,7 @@ function About() {
                     <div className="absolute"></div>
 
                     <img
-                        src="/public/images/about.jpg"
+                        src="/src/assets/images/about.jpg"
                         className="w-full h-full sm:h-auto lg:h-full object-cover"
                         alt=""
                     />

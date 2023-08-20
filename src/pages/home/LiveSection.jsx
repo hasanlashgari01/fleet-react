@@ -1,14 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import SectionTop from "./SectionTop";
+import SectionTop from "../../components/SectionTop";
 import "swiper/css";
 import "swiper/css/navigation";
 
 function LiveSection() {
     const data = [
-        { image: "/public/images/products/Live-Product-1.jpg", title: "Solo Landing Kit", count: "6,879" },
-        { image: "/public/images/products/Live-Product-1.jpg", title: "Pick up the earliest sunrise", count: "9,849" },
-        { image: "/public/images/products/Live-Product-1.jpg", title: "Unique stay", count: "12,879" },
+        { image: "/src/assets/images/products/Live-Product-1.jpg", title: "Solo Landing Kit", count: "6,879" },
+        { image: "/src/assets/images/products/Live-Product-1.jpg", title: "Pick up the earliest sunrise", count: "9,849" },
+        { image: "/src/assets/images/products/Live-Product-1.jpg", title: "Unique stay", count: "12,879" },
     ];
 
     return (

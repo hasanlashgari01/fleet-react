@@ -1,17 +1,17 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import SectionTop from "./SectionTop";
+import SectionTop from "../../components/SectionTop";
 import "swiper/css";
 import "swiper/css/navigation";
 
 function Adventure() {
     const data = [
-        { image: "/public/Holiday Summer.svg", title: "Luxury resort at the sea", count: "9,326" },
-        { image: "/public/Holiday Camp.svg", title: "Camping amidst the wild", count: "2,326" },
-        { image: "/public/Holiday Snow.svg", title: "Skiing in the Alps", count: "3,326" },
-        { image: "/public/Holiday Summer.svg", title: "Luxury resort at the sea", count: "9,326" },
-        { image: "/public/Holiday Camp.svg", title: "Camping amidst the wild", count: "2,326" },
-        { image: "/public/Holiday Snow.svg", title: "Skiing in the Alps", count: "3,326" },
+        { image: "/src/assets/Holiday Summer.svg", title: "Luxury resort at the sea", count: "9,326" },
+        { image: "/src/assets/Holiday Camp.svg", title: "Camping amidst the wild", count: "2,326" },
+        { image: "/src/assets/Holiday Snow.svg", title: "Skiing in the Alps", count: "3,326" },
+        { image: "/src/assets/Holiday Summer.svg", title: "Luxury resort at the sea", count: "9,326" },
+        { image: "/src/assets/Holiday Camp.svg", title: "Camping amidst the wild", count: "2,326" },
+        { image: "/src/assets/Holiday Snow.svg", title: "Skiing in the Alps", count: "3,326" },
     ];
 
     return (

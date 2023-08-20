@@ -1,6 +1,6 @@
-import FilterDropdown from "./FilterDropdown";
-import Product from "./Product";
-import SectionTop from "./SectionTop";
+import FilterDropdown from "../../components/FilterDropdown";
+import Product from "../../components/Product";
+import SectionTop from "../../components/SectionTop";
 
 function ProductCard() {
     return (

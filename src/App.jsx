@@ -1,5 +1,5 @@
 import { useRoutes } from "react-router";
-import Header from "./components/Header.jsx";
+import Header from "./layouts/Header.jsx";
 import routes from "./routes.jsx";
 
 function App() {

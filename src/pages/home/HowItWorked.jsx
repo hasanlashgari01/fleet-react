@@ -1,5 +1,5 @@
-import SectionTop from "./SectionTop";
-import WorkedBox from "./WorkedBox";
+import SectionTop from "../../components/SectionTop";
+import WorkedBox from "../../components/WorkedBox";
 
 function HowItWorked() {
     return (

@@ -3,7 +3,7 @@ function Product({ title, subTitle, price, offPrice, startDate, endDate, score }
         <div className="group w-[267px] mx-auto bg-neutral-8 rounded-2xl overflow-hidden">
             <div className="w-full h-56 overflow-hidden">
                 <img
-                    src="/public/images/products/Product-2.jpg"
+                    src="/src/assets/images/products/Product-2.jpg"
                     alt=""
                     className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-1000"
                 />
