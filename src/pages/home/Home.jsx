@@ -4,6 +4,7 @@ import About from "./About";
 import HowItWorked from "./HowItWorked";
 import ProductCard from "./ProductCard";
 import LiveSection from "./LiveSection";
+import ExploreNearby from "./ExploreNearby";
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
             <HowItWorked />
             <LiveSection />
             <ProductCard />
+            <ExploreNearby />
         </>
     );
 }
