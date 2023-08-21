@@ -4,6 +4,7 @@ import About from "./About";
 import HowItWorked from "./HowItWorked";
 import ProductCard from "./ProductCard";
 import LiveSection from "./LiveSection";
+import Host from "./Host";
 import ExploreNearby from "./ExploreNearby";
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
             <HowItWorked />
             <LiveSection />
             <ProductCard />
+            <Host />
             <ExploreNearby />
         </>
     );
