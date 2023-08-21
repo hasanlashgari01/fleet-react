@@ -7,7 +7,11 @@ import "swiper/css/navigation";
 function LiveSection() {
     const data = [
         { image: "/src/assets/images/products/Live-Product-1.jpg", title: "Solo Landing Kit", count: "6,879" },
-        { image: "/src/assets/images/products/Live-Product-1.jpg", title: "Pick up the earliest sunrise", count: "9,849" },
+        {
+            image: "/src/assets/images/products/Live-Product-1.jpg",
+            title: "Pick up the earliest sunrise",
+            count: "9,849",
+        },
         { image: "/src/assets/images/products/Live-Product-1.jpg", title: "Unique stay", count: "12,879" },
     ];
 
@@ -77,7 +81,7 @@ function LiveSection() {
                             </svg>
                         </button>
                     </div>
-                </Swiper>{" "}
+                </Swiper>
             </div>
         </div>
     );
