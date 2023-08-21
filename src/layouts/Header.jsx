@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import DropdownHeader from "../components/DropdownHeader.jsx";
+import Logo from "../components/Logo.jsx";
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,12 +13,7 @@ function Header() {
             <div className="flex justify-between items-center">
                 {/* Left side */}
                 <div className="flex">
-                    <Link className="flex items-center gap-x-2">
-                        <img src="./src/assets/logo.svg" alt="Logo" className="w-8 md:w-9 h-8 md:h-9" />
-                        <span className="text-neutral-2 dark:text-neutral-8 font-PoppinsSemiBold text-2xl md:text-[27px]">
-                            fleet
-                        </span>
-                    </Link>
+                    <Logo />
                     <span className="hidden md:inline-block mx-10 bg-neutral-6 dark:bg-neutral-2 w-[1px]"></span>
                     <div className="relative hidden md:inline-flex cursor-default lg:cursor-pointer transition-colors">
                         <DropdownHeader icon="arrow-down-simple" title="Travelers" position="left-0">
