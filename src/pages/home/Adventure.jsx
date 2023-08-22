@@ -56,10 +56,10 @@ function Adventure() {
                             <div className="flex items-center gap-x-4 w-full p-4 pr-6 select-none">
                                 <img src={item.image} className="object-cover h-20 DEFAULT:h-28 lg:h-40" alt="" />
                                 <div>
-                                    <h4 className="h-12 text-neutral-2 font-PoppinsMedium text-base line-clamp-2">
+                                    <h4 className="h-12 text-neutral-2 dark:text-neutral-8 font-PoppinsMedium text-base line-clamp-2">
                                         {item.title}
                                     </h4>
-                                    <span className="inline-block mt-2 pt-2 px-4 pb-1.5 bg-neutral-6 text-neutral-2 font-PoppinsBold text-xs/3 uppercase rounded-[32px]">
+                                    <span className="inline-block mt-2 pt-2 px-4 pb-1.5 bg-neutral-6 dark:bg-neutral-3 text-neutral-2 dark:text-neutral-6 font-PoppinsBold text-xs/3 uppercase rounded-[32px]">
                                         {item.count} places
                                     </span>
                                 </div>
@@ -69,14 +69,14 @@ function Adventure() {
                 })}
                 <div className="text-center mt-8 lg:mt-12 space-x-2">
                     <button
-                        className="image-swiper-button-prev border-2 border-transparent hover:border-neutral-6 disabled:border-none rounded-full transition-all duration-300 disabled:opacity-50"
+                        className="image-swiper-button-prev dark:text-neutral-4 border-2 border-transparent hover:border-neutral-6 dark:hover:border-neutral-3 disabled:border-none rounded-full transition-all duration-300 disabled:opacity-50"
                         disabled
                     >
                         <svg className="w-10 h-10 p-2">
                             <use href="#arrow-left"></use>
                         </svg>
                     </button>
-                    <button className="image-swiper-button-next border-2 border-transparent hover:border-neutral-6 disabled:border-none rounded-full transition-all duration-300 disabled:opacity-50">
+                    <button className="image-swiper-button-next dark:text-neutral-4 border-2 border-transparent hover:border-neutral-6 dark:hover:border-neutral-3 disabled:border-none rounded-full transition-all duration-300 disabled:opacity-50">
                         <svg className="w-10 h-10 p-2">
                             <use href="#arrow-right"></use>
                         </svg>

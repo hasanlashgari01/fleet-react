@@ -55,7 +55,7 @@ function LiveSection() {
                                         />
                                     </div>
                                     <div className="text-center">
-                                        <h4 className="mt-6 text-neutral-2 font-PoppinsMedium text-base line-clamp-1">
+                                        <h4 className="mt-6 text-neutral-2 dark:text-neutral-8 font-PoppinsMedium text-base line-clamp-1">
                                             {item.title}
                                         </h4>
                                         <span className="inline-block mt-2 text-neutral-4 font-PoppinsRegular text-sm/6">

@@ -5,7 +5,7 @@ function FilterDropdown({ title, isHidden, children }) {
 
     return (
         <div
-            className={`relative w-full xs:w-64 max-lg:mx-8 flex max-lg:flex-auto bg-neutral-8 border-2 border-neutral-6 rounded-xl cursor-pointer select-none ${
+            className={`relative w-full xs:w-64 max-lg:mx-8 flex max-lg:flex-auto bg-neutral-8 dark:bg-transparent border-2 border-neutral-6 dark:border-neutral-3 rounded-xl cursor-pointer select-none ${
                 isHidden ? "lg:hidden" : ""
             }`}
         >
@@ -13,9 +13,9 @@ function FilterDropdown({ title, isHidden, children }) {
                 className="w-full flex justify-between items-center py-2 pl-4 pr-2"
                 onClick={() => setIsDropdown(!isDropdown)}
             >
-                <span className="text-neutral-2 font-PoppinsMedium text-sm/6">{title}</span>
+                <span className="text-neutral-2 dark:text-neutral-8 font-PoppinsMedium text-sm/6">{title}</span>
                 <span className="p-1">
-                    <svg className="w-6 h-6 text-neutral-4 border-2 border-neutral-6 rounded-full">
+                    <svg className="w-6 h-6 text-neutral-4 dark:text-neutral-4 border-2 border-neutral-6 dark:border-neutral-4 rounded-full">
                         <use href="#arrow-down-simple"></use>
                     </svg>
                 </span>
@@ -25,7 +25,7 @@ function FilterDropdown({ title, isHidden, children }) {
                     isDropdown ? "visible opacity-100 translate-y-0" : "invisible opacity-0 -translate-y-2"
                 }`}
             >
-                <ul className="grid grid-cols-1 w-full bg-neutral-8 border-2 border-neutral-6 rounded-xl font-PoppinsMedium text-neutral-4 text-sm/6">
+                <ul className="grid grid-cols-1 w-full bg-neutral-8 dark:bg-neutral-1 border-2 border-neutral-6 dark:border-neutral-3 rounded-xl font-PoppinsMedium text-neutral-4 text-sm/6">
                     {children}
                 </ul>
             </div>
