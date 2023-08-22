@@ -105,11 +105,11 @@
     }
 
     .search__link {
-        @apply shrink-0 text-neutral-4 font-DMSansBold text-sm/4;
+        @apply shrink-0 text-neutral-4 dark:text-neutral-5 font-DMSansBold text-sm/4;
     }
 
     .search__link--active {
-        @apply text-neutral-2;
+        @apply text-neutral-2 dark:text-neutral-8;
     }
 
     .search-btn {

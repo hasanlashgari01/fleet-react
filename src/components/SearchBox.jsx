@@ -77,7 +77,7 @@ function SearchBox() {
     };
 
     return (
-        <div className="absolute inset-x-1 lg:inset-x-10 2xl:inset-x-20 top-[80%] p-5 lg:p-10 bg-gradient-to-br from-neutral-8 from-0% to-neutral-8/[83%] to-100% border border-neutral-8 backdrop-blur-lg shadow-xl lg:shadow-dropdown rounded-[20px] z-50">
+        <div className="absolute inset-x-1 lg:inset-x-10 2xl:inset-x-20 top-[80%] p-5 lg:p-10 bg-gradient-to-br from-neutral-8 dark:from-neutral-2 from-0% to-neutral-8/[83%] dark:to-neutral-2/70 to-100% border border-neutral-8 dark:border-neutral-3 backdrop-blur-lg shadow-xl lg:shadow-dropdown rounded-[20px] z-50">
             {/* Header */}
             <div className="mb-6 z-50">
                 <nav className="flex gap-x-8 w-full" ref={searchBoxRef}>
@@ -94,15 +94,15 @@ function SearchBox() {
                         Things to do
                     </span>
                 </nav>
-                <div className="relative mt-[30px] w-full h-[1px] bg-neutral-6 rounded-[1px]">
-                    <span className="absolute left-0 inline-block w-[38px] h-full bg-neutral-2 rounded-sm transition-all duration-500 ease-linear"></span>
+                <div className="relative mt-[30px] w-full h-[1px] bg-neutral-6 dark:bg-neutral-4 rounded-[1px]">
+                    <span className="absolute left-0 inline-block w-[38px] h-full bg-neutral-2 dark:bg-neutral-8 rounded-sm transition-all duration-500 ease-linear"></span>
                 </div>
             </div>
             {/* Footer */}
             <div className="relative">
                 <div className="grid grid-cols-1 xs:grid-cols-2 2xl:grid-cols-4 h-fit">
                     <div className="relative flex items-start gap-x-4 p-2 lg:p-4 order-first">
-                        <svg className="w-6 h-6 shrink-0 text-neutral-5">
+                        <svg className="w-6 h-6 shrink-0 text-neutral-5 dark:text-neutral-4">
                             <use href="#location-arrow"></use>
                         </svg>
                         <div className="flex flex-col">
@@ -110,7 +110,7 @@ function SearchBox() {
                                 id="location"
                                 type="text"
                                 placeholder="Location"
-                                className="w-full bg-transparent text-neutral-2 placeholder:text-neutral-2 font-PoppinsSemiBold text-lg lg:text-2xl outline-0"
+                                className="w-full bg-transparent text-neutral-2 dark:text-neutral-8 placeholder:text-neutral-2 dark:placeholder:text-neutral-8 font-PoppinsSemiBold text-lg lg:text-2xl outline-0"
                                 value={searchValue}
                                 onClick={searchHandler}
                                 onChange={(e) => setSearchValue(e.target.value)}
@@ -151,7 +151,7 @@ function SearchBox() {
                     </div>
                     <div className="grid grid-cols-1 xs:grid-cols-2 col-span-2">
                         <div className="flex items-start gap-x-4 p-2 lg:p-4">
-                            <svg className="w-6 h-6 shrink-0 text-neutral-5">
+                            <svg className="w-6 h-6 shrink-0 text-neutral-5 dark:text-neutral-4">
                                 <use href="#calendar"></use>
                             </svg>
                             <div className="flex flex-col">
@@ -159,7 +159,7 @@ function SearchBox() {
                                     id="date"
                                     type="text"
                                     placeholder="Check in"
-                                    className="w-full bg-transparent text-neutral-2 placeholder:text-neutral-2 font-PoppinsSemiBold text-lg lg:text-2xl outline-0"
+                                    className="w-full bg-transparent text-neutral-2 dark:text-neutral-8 placeholder:text-neutral-2 dark:placeholder:text-neutral-8 font-PoppinsSemiBold text-lg lg:text-2xl outline-0"
                                 />
                                 <label
                                     htmlFor="location"
@@ -170,7 +170,7 @@ function SearchBox() {
                             </div>
                         </div>
                         <div className="flex items-start gap-x-4 p-2 lg:p-4">
-                            <svg className="w-6 h-6 shrink-0 text-neutral-5">
+                            <svg className="w-6 h-6 shrink-0 text-neutral-5 dark:text-neutral-4">
                                 <use href="#calendar"></use>
                             </svg>
                             <div className="flex flex-col">
@@ -178,7 +178,7 @@ function SearchBox() {
                                     id="location"
                                     type="text"
                                     placeholder="Check out"
-                                    className="w-full bg-transparent text-neutral-2 placeholder:text-neutral-2 font-PoppinsSemiBold text-lg lg:text-2xl outline-0"
+                                    className="w-full bg-transparent text-neutral-2 dark:text-neutral-8 placeholder:text-neutral-2 dark:placeholder:text-neutral-8 font-PoppinsSemiBold text-lg lg:text-2xl outline-0"
                                 />
                                 <label
                                     htmlFor="location"
@@ -190,7 +190,7 @@ function SearchBox() {
                         </div>
                     </div>
                     <div className="relative flex items-start gap-x-4 p-2 lg:p-4 xs:order-first 2xl:order-last">
-                        <svg className="w-6 h-6 shrink-0 text-neutral-5">
+                        <svg className="w-6 h-6 shrink-0 text-neutral-5 dark:text-neutral-4">
                             <use href="#user"></use>
                         </svg>
                         <div className="flex flex-col">
@@ -198,7 +198,7 @@ function SearchBox() {
                                 id="travelers"
                                 type="text"
                                 placeholder="Travelers"
-                                className="w-full bg-transparent text-neutral-2 placeholder:text-neutral-2 font-PoppinsSemiBold text-lg lg:text-2xl outline-0"
+                                className="w-full bg-transparent text-neutral-2 dark:text-neutral-8 placeholder:text-neutral-2 dark:placeholder:text-neutral-8 font-PoppinsSemiBold text-lg lg:text-2xl outline-0"
                                 value={result}
                                 onClick={guestHandler}
                                 ref={guestRef}
