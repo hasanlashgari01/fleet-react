@@ -7,7 +7,7 @@ import ModalLogin from "../components/ModalLogin.jsx";
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isModalRegister, setIsModalRegister] = useState(true);
+    const [isModalRegister, setIsModalRegister] = useState(false);
     const [isModalLogin, setIsModalLogin] = useState(false);
 
     const isLinkActive = ({ isActive }) => (isActive ? "nav__link nav__link--active" : "nav__link");
