@@ -14,14 +14,14 @@ function ModalLogin({ isModalLogin, setIsModalLogin, modalChange }) {
             <div className="absolute w-full h-full bg-neutral-1/30 dark:bg-neutral-2/80" onClick={closeModal}></div>
             <div className={`modal__wrapper ${isModalLogin ? "md:-translate-y-1/2" : "translate-y-full"}`}>
                 <span
-                    className="hidden lg:block absolute -top-6 -right-6 p-2 bg-neutral-8 shadow-md z-50 rounded-full cursor-pointer"
+                    className="hidden lg:block absolute -top-6 -right-6 p-2 bg-neutral-8 dark:bg-neutral-2 shadow-md z-50 rounded-full cursor-pointer"
                     onClick={closeModal}
                 >
                     <svg className="w-6 h-6">
                         <use href="#close"></use>
                     </svg>
                 </span>
-                <h1 className="text-neutral-1 font-DMSansBold text-center text-[40px]/[48px]">Sign in</h1>
+                <h1 className="text-neutral-1 dark:text-neutral-8 font-DMSansBold text-center text-[40px]/[48px]">Sign in</h1>
                 <form className="flex flex-col">
                     <label className="form__item-wrapper">
                         <input type="email" placeholder="Enter your email" className="form__item-input" />
@@ -36,7 +36,7 @@ function ModalLogin({ isModalLogin, setIsModalLogin, modalChange }) {
                     />
                 </form>
                 <div className="flex justify-between">
-                    <span className="block mt-4 lg:mt-8 font-PoppinsRegular text-center text-xs/5">
+                    <span className="block mt-4 lg:mt-8 text-neutral-3 dark:text-neutral-6 font-PoppinsRegular text-center text-xs/5">
                         Forgot password?
                     </span>
                     <span
