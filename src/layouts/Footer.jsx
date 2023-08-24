@@ -45,14 +45,12 @@ function Footer() {
                     </Link>
                 </div>
                 <div>
-                    <h4 className="text-neutral-2 dark:text-neutral-6 font-PoppinsBold text-xs/3 uppercase">Join our community 🔥</h4>
-                    <div className="relative mt-4 px-4 py-3.5 xs:w-80 lg:w-64 border-2 dark:border-neutral-3 rounded-[90px]">
-                        <input
-                            type="email"
-                            placeholder="Enter your email"
-                            className="outline-0 border-0 w-full pr-8 bg-transparent text-neutral-4 font-PoppinsRegular text-sm/6"
-                        />
-                        <span className="absolute right-2 top-2 bottom-2 flex justify-center items-center aspect-square bg-primary-1 p-1 rounded-full lg:cursor-pointer">
+                    <h4 className="text-neutral-2 dark:text-neutral-6 font-PoppinsBold text-xs/3 uppercase">
+                        Join our community 🔥
+                    </h4>
+                    <div className="form__item-wrapper xs:w-80 lg:w-64">
+                        <input type="email" placeholder="Enter your email" className="form__item-input" />
+                        <span className="form__item-btn">
                             <svg className="w-6 h-6 text-neutral-8">
                                 <use href="#arrow-right"></use>
                             </svg>

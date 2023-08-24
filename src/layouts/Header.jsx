@@ -2,14 +2,34 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import DropdownHeader from "../components/DropdownHeader.jsx";
 import Logo from "../components/Logo.jsx";
+import ModalRegister from "../components/ModalRegister.jsx";
+import ModalLogin from "../components/ModalLogin.jsx";
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isModalRegister, setIsModalRegister] = useState(false);
+    const [isModalLogin, setIsModalLogin] = useState(false);
 
     const isLinkActive = ({ isActive }) => (isActive ? "nav__link nav__link--active" : "nav__link");
 
+    const modalChange = () => {
+        if (isModalRegister) {
+            setIsModalLogin(true);
+            setIsModalRegister(false);
+        } else {
+            setIsModalLogin(false);
+            setIsModalRegister(true);
+        }
+    };
+
     return (
         <header className="container pt-12 pb-6 md:py-5">
+            <ModalRegister
+                isModalRegister={isModalRegister}
+                setIsModalRegister={setIsModalRegister}
+                modalChange={modalChange}
+            />
+            <ModalLogin isModalLogin={isModalLogin} setIsModalLogin={setIsModalLogin} modalChange={modalChange} />
             <div className="flex justify-between items-center">
                 {/* Left side */}
                 <div className="flex">
