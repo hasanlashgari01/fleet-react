@@ -1,25 +1,31 @@
 import React from "react";
 import FilterDropdown from "../../components/FilterDropdown";
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
-        <div className="lg:mt-12">
-            <div>
-                <div>
-                    <svg className="w-10 h-10 text-neutral-2">
-                        <use href="#arrow-left-simple"></use>
-                    </svg>
+        <div className="mt-64 xs:mt-10 lg:mt-12">
+            <div className="flex justify-between">
+                <div className="flex gap-x-3">
+                    <Link to="/">
+                        <svg className="inline-block lg:hidden w-10 h-10 text-neutral-2">
+                            <use href="#arrow-left-simple"></use>
+                        </svg>
+                    </Link>
+
                     <div>
-                        <h1>Places to stay</h1>
-                        <div>
-                            <span>300+ stays</span>
-                            <span>May 1 - 14, 2 guests</span>
+                        <h1 className="text-neutral-2 font-DMSansBold text-[32px]/10">Places to stay</h1>
+                        <div className="mt-3 space-x-4">
+                            <span className="p-2 text-primary-4 font-PoppinsBold text-xs/3 uppercase border-2 border-primary-4 rounded">
+                                300+ stays
+                            </span>
+                            <span className="text-neutral-2 font-PoppinsRegular text-xs/5">May 1 - 14, 2 guests</span>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <span>Advanced filter</span>
-                    <svg className="w-10 h-10 text-neutral-2">
+                <div className="hidden lg:inline-flex items-center gap-x-3 h-fit py-3 px-6 border-2 border-neutral-6 rounded-full">
+                    <span className="text-neutral-2 font-DMSansBold leading-4 cursor-pointer">Advanced filter</span>
+                    <svg className="w-4 h-4 text-neutral-4">
                         <use href="#plus2"></use>
                     </svg>
                 </div>
