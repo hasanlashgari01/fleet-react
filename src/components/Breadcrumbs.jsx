@@ -5,7 +5,7 @@ function Breadcrumbs() {
         <div className="hidden lg:flex items-center justify-between">
             <Link
                 to="/"
-                className="flex items-center gap-x-3 py-3 px-4 hover:bg-neutral-6 dark:hover:bg-neutral-3 text-neutral-2 dark:text-neutral-8 font-DMSansBold text-sm/4 border-2 border-neutral-6 dark:border-neutral-3 rounded-full transition-colors duration-300 cursor-pointer"
+                className="flex items-center gap-x-3 py-3 px-4 hover:bg-neutral-6 dark:hover:bg-neutral-3 text-neutral-2 dark:text-neutral-8 font-DMSansBold text-sm/4 border-2 border-neutral-6 dark:border-neutral-3 rounded-full transition-colors duration-300"
             >
                 <svg className="w-4 h-4">
                     <use href="#arrow-left-simple"></use>
