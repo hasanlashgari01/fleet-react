@@ -1,6 +1,7 @@
 import Hero from "../home/Hero";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Header from "./Header";
+import Products from "./Products";
 
 function Category() {
     return (
@@ -9,6 +10,7 @@ function Category() {
             <div className="container">
                 <Breadcrumbs />
                 <Header />
+                <Products />
             </div>
         </>
     );

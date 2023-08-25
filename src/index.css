@@ -131,6 +131,10 @@
     .modal__wrapper {
         @apply absolute box-content bottom-4 left-4 right-4 md:inset-1/2 md:w-[352px] h-fit md:min-h-[348px] p-6 md:py-10 md:px-24 md:-translate-x-1/2 bg-neutral-8 dark:bg-neutral-1 rounded-2xl transition-transform duration-300 ease-linear;
     }
+
+    .section__title {
+        @apply text-neutral-2 dark:text-neutral-8 font-DMSansBold text-[32px]/10 leading-[-0.32px];
+    }
 }
 
 /* Scroll bar styles */
