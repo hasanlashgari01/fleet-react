@@ -3,6 +3,7 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 import Header from "./Header";
 import Products from "./Products";
 import SuperHost from "./SuperHost";
+import Testimonials from "../../components/Testimonials";
 
 function Category() {
     return (
@@ -13,6 +14,7 @@ function Category() {
                 <Header />
                 <Products />
                 <SuperHost />
+                <Testimonials />
             </div>
         </>
     );
