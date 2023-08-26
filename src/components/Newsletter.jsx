@@ -53,7 +53,7 @@ function Newsletter() {
                     <UserReview style="hidden top-auto lg:bottom-[350px] -left-0 lg:w-64 lg:mx-auto" />
                     <UserReview style="hidden top-auto lg:bottom-[350px] -left-0 lg:w-64 lg:mx-auto" />
                 </div>
-                <div className="absolute top-10 w-[188px] h-[188px] rounded-[10px] overflow-hidden z-10 hover:z-30">
+                <div className="absolute top-10 w-[188px] 2xl:w-[252px] aspect-square rounded-[10px] overflow-hidden z-10 hover:z-30">
                     <img
                         src="/src/assets/images/newsletter/newsletter-1.jpg"
                         alt=""
@@ -67,14 +67,14 @@ function Newsletter() {
                         />
                     </span>
                 </div>
-                <div className="absolute top-[175px] right-2/4 w-[137px] rounded-[10px] overflow-hidden z-20 hover:z-30">
+                <div className="absolute top-[175px] right-2/4 2xl:right-[60%] w-[137px] 2xl:w-[256px] rounded-[10px] overflow-hidden z-20 hover:z-30">
                     <img
                         src="/src/assets/images/newsletter/newsletter-2.jpg"
                         alt=""
                         className="w-full h-full object-cover"
                     />
                 </div>
-                <div className="absolute top-1/2 right-0 h-48 rounded-[10px] overflow-hidden z-0 hover:z-30">
+                <div className="absolute top-1/2 right-0 h-48 2xl:h-72 rounded-[10px] overflow-hidden z-0 hover:z-30">
                     <img
                         src="/src/assets/images/newsletter/newsletter-3.jpg"
                         alt=""
