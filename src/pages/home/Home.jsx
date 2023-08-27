@@ -10,7 +10,7 @@ import ExploreNearby from "./ExploreNearby";
 function Home() {
     return (
         <>
-            <Hero />
+            <Hero bgId="hero-stay" />
             <Adventure />
             <About />
             <HowItWorked />

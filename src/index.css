@@ -85,23 +85,31 @@
         @apply flex gap-x-3 py-3 pr-3 pl-5 text-neutral-4 hover:text-neutral-2 dark:hover:text-neutral-6 text-sm/4 font-DMSansBold transition-all duration-200 ease-in;
     }
 
-    #hero {
+    #hero-stay {
         @apply hero-mobile lg:hero-tablet 2xl:hero-laptop;
     }
 
+    #hero-flights {
+        @apply bg-[80%] bg-[url('./assets/images/hero/flights.jpg')];
+    }
+
+    #hero-car {
+        @apply -scale-x-[1] bg-[center_bottom_-2rem] bg-[url('./assets/images/hero/hero-car.jpg')];
+    }
+
     .hero-mobile {
-        background-image: url("./assets/images/hero-mobile.jpg");
+        background-image: url("./assets/images/hero/hero-mobile.jpg");
         transform: scalex(-1);
     }
 
     .hero-tablet {
-        background-image: url("./assets/images/hero-small.png");
+        background-image: url("./assets/images/hero/hero-small.png");
         transform: scalex(1);
         background-position: center center;
     }
 
     .hero-laptop {
-        background-image: url("./assets/images/hero-big.png");
+        background-image: url("./assets/images/hero/hero-big.png");
     }
 
     .search__link {

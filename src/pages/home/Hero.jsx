@@ -3,7 +3,7 @@ import SearchBox from "../../components/SearchBox/SearchBox";
 import Guest from "../../components/SearchBox/Guest";
 import Search from "../../components/SearchBox/Search";
 
-function Hero() {
+function Hero({ bgId }) {
     const data = [
         { title: "New York, NY" },
         { title: "New York, Manhattan, New York, NY" },
@@ -73,7 +73,7 @@ function Hero() {
                     <span className="search-btn mx-auto">Start your search</span>
                 </div>
                 <div
-                    id="hero"
+                    id={bgId}
                     className="bg-[17%] -mt-56 lg:mt-0 bg-248 xs:bg-175 sm:bg-135 lg:bg-cover bg-no-repeat h-full z-0"
                 ></div>
             </div>
