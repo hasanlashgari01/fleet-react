@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import DropdownHeader from "../components/DropdownHeader.jsx";
 import Logo from "../components/Logo.jsx";
-import ModalRegister from "../components/ModalRegister.jsx";
-import ModalLogin from "../components/ModalLogin.jsx";
+import ModalRegister from "../components/Modal/ModalRegister.jsx";
+import ModalLogin from "../components/Modal/ModalLogin.jsx";
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
