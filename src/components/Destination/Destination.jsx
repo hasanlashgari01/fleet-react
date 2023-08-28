@@ -2,7 +2,7 @@ import React from "react";
 
 function Destination({ title }) {
     return (
-        <div className="w-full sm:w-[264.5px] space-y-[21px]">
+        <div className="w-full xs:w-[264.5px] space-y-[21px]">
             <div className="relative h-64 rounded-3xl overflow-hidden">
                 <img src="/src/assets/images/destinations/destinations-1.jpg" alt="" className="object-cover h-full" />
                 <span className="absolute top-4 left-4 py-1.5 px-2 bg-neutral-2 text-neutral-8 uppercase font-PoppinsBold text-xs/3 z-10 rounded-3xl">

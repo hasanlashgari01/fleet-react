@@ -1,5 +1,6 @@
 import Hero from "../home/Hero";
 import Destinations from "../../components/Destination/Destinations";
+import ExploreNearby from "./ExploreNearby";
 
 function Index() {
     return (
@@ -7,6 +8,7 @@ function Index() {
             <Hero bgId="hero-car" />
             <div className="container">
                 <Destinations />
+                <ExploreNearby />
             </div>
         </>
     );
