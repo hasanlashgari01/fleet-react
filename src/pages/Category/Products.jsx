@@ -2,7 +2,7 @@ import Product from "../../components/Product";
 
 function Products() {
     return (
-        <div className="mt-20 mb-[136px]">
+        <div className="mt-20 mb-34">
             <h1 className="section__title">Over 300 stays</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((product, index) => (

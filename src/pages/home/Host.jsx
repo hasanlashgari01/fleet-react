@@ -8,7 +8,7 @@ function Host() {
     const data = [1, 2, 3, 4];
 
     return (
-        <div className="container py-16 lg:pt-28 lg:pb-[136px]">
+        <div className="container py-16 lg:pt-28 lg:pb-34">
             <div className="flex flex-wrap gap-6 justify-between items-center">
                 <h1 className="text-neutral-2 dark:text-neutral-8 font-DMSansBold text-[32px]/10 tracking-[-0.32px]">
                     Best hosts

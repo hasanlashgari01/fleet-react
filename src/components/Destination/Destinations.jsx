@@ -12,7 +12,7 @@ function Destinations() {
         { id: "4", title: "Milan" },
     ];
     return (
-        <div className="pb-[136px]">
+        <div className="py-16 lg:py-0 2xl:pb-34">
             <SectionTop title="Popular destinations" description="for car rentals" />
             <Swiper
                 slidesPerView={1.1}

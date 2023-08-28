@@ -5,7 +5,7 @@ function HowItWorked() {
     return (
         <div className="container">
             <SectionTop title="How It Worked" description="Keep calm & travel on" />
-            <div className="flex flex-wrap justify-center items-center gap-12 2xl:gap-32 mt-8 lg:mt-16 mb-28 2xl:mb-[136px]">
+            <div className="flex flex-wrap justify-center items-center gap-12 2xl:gap-32 mt-8 lg:mt-16 mb-28 2xl:mb-34">
                 <WorkedBox
                     title="Book & relax"
                     description="We realize ideas from simple to complex, everything becomes easy to use."

@@ -4,7 +4,7 @@ import UserReview from "../../components/UserReview";
 
 function About() {
     return (
-        <div className="container pb-16 lg:pb-28 2xl:pb-[136px]">
+        <div className="container pb-16 lg:pb-28 2xl:pb-34">
             <SectionTop
                 title="Travel to make memories all around the world"
                 description="Find trips that fit a flexible lifestyle"

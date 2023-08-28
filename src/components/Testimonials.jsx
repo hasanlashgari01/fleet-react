@@ -13,7 +13,7 @@ function Testimonials() {
     };
 
     return (
-        <div className="py-16 lg:py-28 2xl:py-[136px]">
+        <div className="py-16 lg:py-28 2xl:py-34">
             <div className="flex flex-col lg:flex-row justify-between">
                 <div>
                     <img src="" alt="" className="h-16" />

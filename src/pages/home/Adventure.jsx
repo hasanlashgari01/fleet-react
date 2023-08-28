@@ -15,7 +15,7 @@ function Adventure() {
     ];
 
     return (
-        <div className="pt-8 2xl:pt-14 pb-16 2xl:pb-[136px] px-4">
+        <div className="pt-8 2xl:pt-14 pb-16 2xl:pb-34 px-4">
             <SectionTop title="Let’s go on an adventure" description="Find and book a great experience." />
             <Swiper
                 slidesPerView={1}
