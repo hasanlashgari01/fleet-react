@@ -1,6 +1,7 @@
 import Hero from "../home/Hero";
 import Destinations from "../../components/Destination/Destinations";
 import ExploreNearby from "./ExploreNearby";
+import AmazingServices from "./AmazingServices";
 
 function Index() {
     return (
@@ -9,6 +10,7 @@ function Index() {
             <div className="container">
                 <Destinations />
                 <ExploreNearby />
+                <AmazingServices />
             </div>
         </>
     );
