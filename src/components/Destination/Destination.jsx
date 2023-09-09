@@ -10,7 +10,7 @@ function Destination({ title }) {
                 </span>
             </div>
             <div>
-                <h2 className="text-neutral-2 font-PoppinsSemiBold text-2xl">{title}</h2>
+                <h2 className="text-neutral-2 dark:text-neutral-8 font-PoppinsSemiBold text-2xl">{title}</h2>
                 <p className="mt-2 text-neutral-4 font-PoppinsRegular text-xs/5">Car rentals in 86 pickup locations</p>
             </div>
         </div>
