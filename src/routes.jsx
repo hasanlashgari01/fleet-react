@@ -1,7 +1,7 @@
 import Home from "./pages/home/Home";
 import FlightsIndex from "./pages/Flights/Index";
 import CarsIndex from "./pages/Cars/Index";
-import Category from "./pages/Category/Category";
+import Category from "./pages/Category/Index";
 
 const routes = [
     { path: "/", element: <Home /> },

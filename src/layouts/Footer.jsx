@@ -3,7 +3,7 @@ import Logo from "../components/Logo";
 
 function Footer() {
     return (
-        <div className="container pt-16 pb-6 lg:pt-20 lg:pb-0">
+        <footer className="container pt-16 pb-6 lg:pt-20 lg:pb-0">
             <div className="flex flex-col lg:flex-row items-start gap-y-12 justify-between">
                 <Logo />
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-8 gap-x-14 justify-between">
@@ -61,7 +61,7 @@ function Footer() {
             <div className="mt-12 py-6 text-neutral-2 dark:text-neutral-4 font-PoppinsMedium text-xs/5 border-t border-neutral-7 dark:border-neutral-2">
                 Copyright © 2021 UI8 LLC. All rights reserved
             </div>
-        </div>
+        </footer>
     );
 }
 
