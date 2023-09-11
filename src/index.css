@@ -143,6 +143,18 @@
     .section__title {
         @apply text-neutral-2 dark:text-neutral-8 font-DMSansBold text-[32px]/10 leading-[-0.32px];
     }
+
+    .faq {
+        @apply hidden sm:flex justify-center gap-x-3;
+    }
+
+    .faq__item {
+        @apply py-1.5 px-3 text-neutral-4 font-DMSansBold text-sm/4 rounded-full transition-colors ease-in duration-300;
+    }
+
+    .faq__item--active {
+        @apply bg-neutral-3 text-neutral-8;
+    }
 }
 
 /* Scroll bar styles */

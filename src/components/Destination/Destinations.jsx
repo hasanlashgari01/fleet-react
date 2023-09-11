@@ -15,23 +15,27 @@ function Destinations() {
         <div className="py-16 lg:py-0 2xl:pb-34">
             <SectionTop title="Popular destinations" description="for car rentals" />
             <Swiper
-                slidesPerView={1.1}
+                slidesPerView={1}
                 spaceBetween={16}
                 breakpoints={{
-                    480: {
+                    450: {
                         slidesPerView: 1.2,
+                        spaceBetween: 20,
+                    },
+                    480: {
+                        slidesPerView: 1.8,
                         spaceBetween: 20,
                     },
                     568: {
                         slidesPerView: 1.8,
                         spaceBetween: 24,
                     },
+                    768: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 24,
+                    },
                     1024: {
                         slidesPerView: 2.8,
-                        spaceBetween: 32,
-                    },
-                    1280: {
-                        slidesPerView: 3.5,
                         spaceBetween: 32,
                     },
                 }}
