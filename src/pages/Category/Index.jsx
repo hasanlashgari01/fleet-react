@@ -9,7 +9,7 @@ import Testimonials from "../../components/Testimonials/Testimonials";
 function Category() {
     return (
         <>
-            <Hero />
+            {/* <Hero /> */}
             <div className="container">
                 <Breadcrumbs />
                 <Header />

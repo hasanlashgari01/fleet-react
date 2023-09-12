@@ -9,8 +9,8 @@ function Index() {
     return (
         <>
             <Hero bgId="hero-car" />
+            <Destinations />
             <div className="container">
-                <Destinations />
                 <ExploreNearby />
                 <AmazingServices />
                 <FAQ />

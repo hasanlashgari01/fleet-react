@@ -12,31 +12,32 @@ function Destinations() {
         { id: "4", title: "Milan" },
     ];
     return (
-        <div className="py-16 lg:py-0 2xl:pb-34">
-            <SectionTop title="Popular destinations" description="for car rentals" />
+        <div className="pl-8 lg:pl-20 2xl:pl-40 pb-16 lg:pb-28 2xl:pb-34">
+            <div className="-ml-8 lg:-ml-20 2xl:-ml-40">
+                <SectionTop title="Popular destinations" description="for car rentals" />
+            </div>
             <Swiper
-                slidesPerView={1}
+                slidesPerView={1.3}
                 spaceBetween={16}
                 breakpoints={{
                     450: {
-                        slidesPerView: 1.2,
+                        slidesPerView: 1.5,
                         spaceBetween: 20,
                     },
                     480: {
-                        slidesPerView: 1.8,
-                        spaceBetween: 20,
-                    },
-                    568: {
-                        slidesPerView: 1.8,
-                        spaceBetween: 24,
+                        slidesPerView: 2.2,
+                        spaceBetween: 32,
                     },
                     768: {
-                        slidesPerView: 2.2,
-                        spaceBetween: 24,
-                    },
-                    1024: {
                         slidesPerView: 2.8,
                         spaceBetween: 32,
+                    },
+                    1024: {
+                        slidesPerView: 3.2,
+                        spaceBetween: 32,
+                    },
+                    1440: {
+                        slidesPerView: 3.5,
                     },
                 }}
                 navigation={{
@@ -55,7 +56,7 @@ function Destinations() {
                     );
                 })}
 
-                <div className="text-center mt-8 lg:mt-12 space-x-2">
+                <div className="-ml-8 lg:-ml-20 2xl:-ml-40 mt-8 lg:mt-12 2xl:mt-16 text-center space-x-2">
                     <button
                         className="image-swiper-button-prev dark:text-neutral-4 border-2 border-transparent hover:border-neutral-6 dark:hover:border-neutral-3 disabled:border-none rounded-full transition-all duration-300 disabled:opacity-50"
                         disabled
