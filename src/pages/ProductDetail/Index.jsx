@@ -1,6 +1,7 @@
 import React from "react";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import ProductHeader from "./ProductHeader";
+import Gallery from "./Gallery";
 
 const Index = () => {
     return (
@@ -9,6 +10,7 @@ const Index = () => {
                 <Breadcrumbs />
             </div>
             <ProductHeader />
+            <Gallery />
         </>
     );
 };

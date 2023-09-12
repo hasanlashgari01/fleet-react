@@ -51,7 +51,6 @@ const ProductHeader = () => {
             <div className="container flex lg:hidden justify-center gap-4 h-fit">
                 <ProductHeaderActions />
             </div>
-            {/* <div className="flex flex-wrap gap-4 justify-between items-center"></div> */}
         </div>
     );
 };
