@@ -12,8 +12,8 @@ function Destinations() {
         { id: "4", title: "Milan" },
     ];
     return (
-        <div className="pl-8 lg:pl-20 2xl:pl-40 pb-16 lg:pb-28 2xl:pb-34">
-            <div className="-ml-8 lg:-ml-20 2xl:-ml-40">
+        <div className="space-wrapper">
+            <div className="space-wrapper__top">
                 <SectionTop title="Popular destinations" description="for car rentals" />
             </div>
             <Swiper
@@ -56,7 +56,7 @@ function Destinations() {
                     );
                 })}
 
-                <div className="-ml-8 lg:-ml-20 2xl:-ml-40 mt-8 lg:mt-12 2xl:mt-16 text-center space-x-2">
+                <div className="space-wrapper__slider mt-8 lg:mt-12 2xl:mt-16 text-center space-x-2">
                     <button
                         className="image-swiper-button-prev dark:text-neutral-4 border-2 border-transparent hover:border-neutral-6 dark:hover:border-neutral-3 disabled:border-none rounded-full transition-all duration-300 disabled:opacity-50"
                         disabled
