@@ -1,6 +1,6 @@
 import { useRoutes } from "react-router";
 import Header from "./layouts/Header.jsx";
-import routes from "./routes.jsx";
+import routes from "./routes/routes.jsx";
 import Footer from "./layouts/Footer.jsx";
 
 function App() {

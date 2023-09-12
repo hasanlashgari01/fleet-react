@@ -5,7 +5,7 @@ import Category from "./Category";
 
 const BrowseByCategory = () => {
     return (
-        <div className="space-wrapper">
+        <div className="space-wrapper__left__bottom">
             <div className="space-wrapper__top">
                 <SectionTop title="Recommended pickup locations" description="A lot of amazing experiences 🏝" />
             </div>

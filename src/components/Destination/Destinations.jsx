@@ -12,7 +12,7 @@ function Destinations() {
         { id: "4", title: "Milan" },
     ];
     return (
-        <div className="space-wrapper">
+        <div className="space-wrapper__left__bottom">
             <div className="space-wrapper__top">
                 <SectionTop title="Popular destinations" description="for car rentals" />
             </div>

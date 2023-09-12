@@ -23,7 +23,7 @@ function Header() {
     };
 
     return (
-        <header className="container pt-12 pb-6 md:py-5">
+        <header className="container py-6 md:py-5 -px-4">
             <ModalRegister
                 isModalRegister={isModalRegister}
                 setIsModalRegister={setIsModalRegister}
@@ -195,7 +195,7 @@ function Header() {
             </div>
             {/* Mobile Nav */}
             <div
-                className={`container fixed top-[104px] flex md:hidden flex-col justify-between px-8 z-50 
+                className={`container fixed top-[104px] flex md:hidden flex-col justify-between px-8 z-50 bg-neutral-8 dark:bg-neutral-1
             ${
                 isMenuOpen
                     ? "inset-0 visible opacity-100 pt-16 pb-[44px] transition-all ease-in duration-500"
