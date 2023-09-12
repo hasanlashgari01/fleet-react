@@ -6,7 +6,7 @@ export const Accordion = ({ question, answer }) => {
     return (
         <div>
             <div
-                className="flex justify-between items-center py-6 border-b border-gray-200 font-medium cursor-pointer"
+                className="flex justify-between items-center py-6 border-b border-neutral-6 dark:border-neutral-3 font-medium cursor-pointer"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <div className="flex items-center">
@@ -15,7 +15,7 @@ export const Accordion = ({ question, answer }) => {
                     </div>
                     <h3 className="text-neutral-2 dark:text-neutral-8 font-bold text-xs sm:text-base">{question}</h3>
                 </div>
-                <svg className={`w-6 h-6 shrink-0 transition-transform duration-200`}>
+                <svg className={`w-6 h-6 text-neutral-4 shrink-0 transition-transform duration-200`}>
                     <use href="#arrow-down-simple" />
                 </svg>
             </div>
