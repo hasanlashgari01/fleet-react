@@ -179,6 +179,13 @@
     .product-header__icon {
         @apply w-6 h-6 text-neutral-4 group-hover:text-neutral-8 start-2 transition-colors duration-150 ease-in;
     }
+
+    .gradient-mobile {
+        background: var(
+            --effect-neutral-8-glass,
+            linear-gradient(84deg, #fcfcfd 36.52%, rgba(252, 252, 253, 0.83) 98.8%)
+        );
+    }
 }
 
 /* Scroll bar styles */
