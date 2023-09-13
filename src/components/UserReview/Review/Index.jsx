@@ -4,11 +4,11 @@ import Reviews from "./Reviews";
 
 const Index = () => {
     return (
-        <>
+        <div className="space-y-8">
             <Top />
             <Form />
             <Reviews />
-        </>
+        </div>
     );
 };
 
