@@ -1,7 +1,5 @@
-import React from "react";
 import Breadcrumbs from "../../components/Breadcrumbs";
-import ProductHeader from "./ProductHeader";
-import Gallery from "./Gallery";
+import ProductHeader from "./ProductHeader/Index";
 import ProductDetail from "./DetailSection/Index";
 
 const Index = () => {
@@ -11,7 +9,6 @@ const Index = () => {
                 <Breadcrumbs />
             </div>
             <ProductHeader />
-            <Gallery />
             <ProductDetail />
         </>
     );
