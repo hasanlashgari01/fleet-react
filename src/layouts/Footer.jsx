@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import Logo from "../components/Logo";
+import ThemeHandler from "../components/ThemeHandler";
 
 function Footer() {
     return (
         <footer className="container pt-16 pb-6 lg:pt-20 lg:pb-0">
             <div className="flex flex-col lg:flex-row items-start gap-y-12 justify-between">
-                <Logo />
+                <div className="space-y-4">
+                    <Logo />
+                    <ThemeHandler />
+                </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-8 gap-x-14 justify-between">
                     <Link
                         to=""

@@ -30,7 +30,11 @@
     }
 
     body {
-        @apply bg-neutral-8 dark:bg-neutral-1 font-PoppinsRegular scroll-smooth;
+        @apply bg-neutral-8 dark:bg-neutral-1 font-PoppinsRegular scroll-smooth transition-colors duration-300 ease-linear;
+    }
+
+    * {
+        @apply transition-colors duration-300 ease-linear;
     }
 }
 
