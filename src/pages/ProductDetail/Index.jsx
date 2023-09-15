@@ -3,6 +3,7 @@ import ProductHeader from "./ProductHeader/Index";
 import ProductDetail from "./DetailSection/Index";
 import UserReview from "../../components/UserReview/Index";
 import PropertyType from "../../components/PropertyType/Index";
+import Newsletter from "../../components/Newsletter";
 
 const Index = () => {
     return (
@@ -14,6 +15,10 @@ const Index = () => {
             <ProductDetail />
             <div className="w-full h-[1px] bg-neutral-6 rounded-full"></div>
             <UserReview />
+            <PropertyType />
+            <div className="container">
+                <Newsletter />
+            </div>
             <PropertyType />
         </>
     );
