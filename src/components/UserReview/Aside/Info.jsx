@@ -3,7 +3,7 @@ import React from "react";
 const Info = () => {
     return (
         <div className="flex justify-center items-center flex-col space-y-8">
-            <div className="flex gap-x-4 px-6 p-2 lg:px-2 bg-neutral-7 rounded-[20px]">
+            <div className="flex gap-x-4 px-6 p-2 lg:px-2 bg-neutral-7 dark:bg-neutral-2 rounded-[20px]">
                 <span className="flex gap-x-2 text-neutral-4 text-sm/6">
                     <svg className="w-5 h-5">
                         <use href="#home"></use>

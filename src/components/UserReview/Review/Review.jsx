@@ -11,7 +11,7 @@ const Review = () => {
                 />
                 <div>
                     <div className="flex justify-between items-center">
-                        <h3 className="max-w-[130px] text-neutral-1 font-PoppinsMedium text-sm/6 line-clamp-1">Myrtie Runolfsson</h3>
+                        <h3 className="max-lg:max-w-[130px] text-neutral-1 dark:text-neutral-8 font-PoppinsMedium text-sm/6 lg:text-lg line-clamp-1">Myrtie Runolfsson</h3>
                         <div className="flex gap-x-0.5">
                             {[0, 1, 2, 3, 4].map((item, index) => (
                                 <svg className="w-4 h-4" key={index}>
@@ -20,18 +20,18 @@ const Review = () => {
                             ))}
                         </div>
                     </div>
-                    <p className="mt-1 text-neutral-3 font-PoppinsRegular text-sm sm:text-base">
+                    <p className="mt-1 text-neutral-3 dark:text-neutral-5 font-PoppinsRegular text-sm sm:text-base">
                         We had the most spectacular view. Unfortunately it was very hot in the room from 2-830 pm due to
                         no air conditioning and no shade.
                     </p>
                     <div className="mt-2 space-x-4"> 
                         <span className="text-neutral-4 font-PoppinsRegular text-xs/5">about 1 hour ago</span>
-                        <span className="text-neutral-2 font-PoppinsSemiBold text-xs/5 lg:cursor-pointer">Like</span>
-                        <span className="text-neutral-2 font-PoppinsSemiBold text-xs/5 lg:cursor-pointer">Reply</span>
-                    </div>
+                        <span className="text-neutral-2 dark:text-neutral-8 font-PoppinsSemiBold text-xs/5 lg:cursor-pointer">Like</span>
+                        <span className="text-neutral-2 dark:text-neutral-8 font-PoppinsSemiBold text-xs/5 lg:cursor-pointer">Reply</span>
+                    </div> 
                 </div>
             </div>
-            <div className="w-full h-[1px] bg-neutral-6 mt-[27px]"></div>
+            <div className="w-full h-[1px] bg-neutral-6 dark:bg-neutral-2 mt-[27px]"></div>
         </>
     );
 };

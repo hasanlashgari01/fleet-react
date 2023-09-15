@@ -7,7 +7,7 @@ const Header = () => {
         <div className="flex gap-x-[22px]">
             <HeaderProfile />
             <div className="flex flex-col justify-between">
-                <h1 className="text-neutral-2 font-DMSansBold text-3xl/10 tracking-[-0.32px]">Zoe towne</h1>
+                <h1 className="text-neutral-2 dark:text-neutral-8 font-DMSansBold text-3xl/10 tracking-[-0.32px]">Zoe towne</h1>
                 <HostInfo />
             </div>
         </div>

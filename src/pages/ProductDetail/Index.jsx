@@ -13,10 +13,10 @@ const Index = () => {
             </div>
             <ProductHeader />
             <ProductDetail />
-            <div className="w-full h-[1px] bg-neutral-6 rounded-full"></div>
+            <div className="w-full h-[1px] bg-neutral-6 dark:bg-neutral-3 rounded-full"></div>
             <UserReview />
             <PropertyType />
-            <div className="container">
+            <div className="container overflow-hidden">
                 <Newsletter />
             </div>
             <PropertyType />
