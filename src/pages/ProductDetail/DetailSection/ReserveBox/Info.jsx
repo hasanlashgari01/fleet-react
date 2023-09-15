@@ -1,6 +1,6 @@
 const Info = () => {
     return (
-        <div className="p-2 bg-neutral-7 rounded-[20px]">
+        <div className="p-2 bg-neutral-7 dark:bg-neutral-3 rounded-[20px]">
             <div className="flex flex-wrap gap-2">
                 <div className="flex items-start flex-1 gap-x-4 p-2 lg:p-4">
                     <svg className="w-6 h-6 shrink-0 text-neutral-5 dark:text-neutral-4">
@@ -13,7 +13,7 @@ const Info = () => {
                             placeholder="Check in"
                             className="w-full bg-transparent text-neutral-4 font-PoppinsRegular text-sm outline-0"
                         />
-                        <label htmlFor="location" className="text-neutral-2 font-PoppinsMedium text-base">
+                        <label htmlFor="location" className="text-neutral-2 dark:text-neutral-8 font-PoppinsMedium text-base">
                             May 15, 2023
                         </label>
                     </div>

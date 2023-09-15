@@ -22,7 +22,7 @@ const ProductInfo = () => {
                         <svg className="w-5 h-5">
                             <use href="#star"></use>
                         </svg>
-                        4.8
+                        <span className="text-neutral-2 dark:text-neutral-8">4.8</span>
                     </span>
                     <span className="inline-flex items-center gap-x-2 text-neutral-4">
                         <svg className="w-5 h-5">

@@ -180,11 +180,22 @@
         @apply w-6 h-6 text-neutral-4 group-hover:text-neutral-8 start-2 transition-colors duration-150 ease-in;
     }
 
+    .mobile-box {
+        @apply fixed bottom-0 left-0 right-0 flex lg:hidden justify-between gap-x-8 h-[120px] p-8 rounded-t-3xl z-30;
+    }
+
     .gradient-mobile {
+        @apply border border-neutral-6 shadow-big;
         background: var(
             --effect-neutral-8-glass,
             linear-gradient(84deg, #fcfcfd 36.52%, rgba(252, 252, 253, 0.83) 98.8%)
         );
+    }
+
+    .gradient-mobile--dark {
+        @apply border border-neutral-3;
+        background: var(--neutrals-2, #23262f);
+        box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.08);
     }
 }
 

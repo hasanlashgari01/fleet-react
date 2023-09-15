@@ -6,7 +6,7 @@ const HostInfo = () => {
             <svg className="w-5 h-5">
                 <use href="#star"></use>
             </svg>
-            <span className="font-PoppinsMedium text-sm/6 text-neutral-2 ml-2">4.8</span>
+            <span className="font-PoppinsMedium text-sm/6 text-neutral-2 dark:text-neutral-8 ml-2">4.8</span>
             <span className="font-PoppinsRegular text-sm/6 text-neutral-4 ml-2">(256 reviews)</span>
         </div>
     );

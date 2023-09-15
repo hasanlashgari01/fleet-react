@@ -8,7 +8,7 @@ const LeftSection = () => {
         <>
             <>
                 <TopMain />
-                <div className="my-6 border border-neutral-6 rounded-full"></div>
+                <div className="my-6 border border-neutral-6 dark:border-neutral-2 rounded-full"></div>
                 <Info />
                 <Description />
             </>
