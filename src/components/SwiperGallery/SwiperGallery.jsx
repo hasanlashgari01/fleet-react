@@ -1,7 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
-import { useEffect, useRef, useState } from "react";
-// import "swiper/css/pagination";
 
 const data = [
     { id: 1, title: "Spectacular views of Queenstown" },

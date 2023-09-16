@@ -5,7 +5,6 @@ const Header = ({ isGalleryOpen, setIsGalleryOpen }) => {
     let [searchParams, setSearchParams] = useSearchParams();
 
     useEffect(() => {
-        // disable scroll
         searchParams.get("isOpen") === "true" && setIsGalleryOpen(true);
     }, [searchParams]);
 
