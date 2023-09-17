@@ -56,6 +56,7 @@ export default {
             boxShadow: {
                 dropdown: "0px 40px 32px -24px rgba(15, 15, 15, 0.12)",
                 big: "0px 64px 64px -48px rgba(15, 15, 15, 0.08)",
+                modal: "0px 40px 64px -32px rgba(15, 15, 15, 0.10)",
             },
             rotate: {
                 15: "15deg",
