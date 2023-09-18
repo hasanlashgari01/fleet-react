@@ -19,7 +19,7 @@ function SearchBox({ children }) {
     }, []);
 
     return (
-        <div className="absolute inset-x-1 lg:inset-x-10 2xl:inset-x-20 top-[80%] p-5 lg:p-10 bg-gradient-to-br from-neutral-8 dark:from-neutral-2 from-0% to-neutral-8/[83%] dark:to-neutral-2/70 to-100% border border-neutral-8 dark:border-neutral-3 backdrop-blur-lg shadow-xl lg:shadow-dropdown rounded-[20px] z-50">
+        <div className="search-box absolute inset-x-1 lg:inset-x-10 2xl:inset-x-20 top-[80%] p-5 lg:p-10 shadow-xl lg:shadow-dropdown rounded-[20px] z-50">
             {/* Header */}
             <div className="mb-6 z-50">
                 <nav className="flex gap-x-8 w-full" ref={searchBoxRef}>

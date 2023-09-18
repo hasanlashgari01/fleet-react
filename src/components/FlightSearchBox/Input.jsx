@@ -6,7 +6,7 @@ const Input = ({ icon, placeholder }) => {
             <svg className="hidden xs:inline-block w-6 h-6 text-neutral-5">
                 <use href={`#${icon}`}></use>
             </svg>
-            <input type="text" placeholder={placeholder} className="w-full font-PoppinsMedium text-2xl text-neutral-2 border-none outline-none" />
+            <input type="text" placeholder={placeholder} className="w-full bg-transparent font-PoppinsMedium text-2xl text-neutral-2 dark:text-neutral-8 border-none outline-none" />
         </div>
     );
 };
