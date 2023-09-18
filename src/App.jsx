@@ -1,7 +1,7 @@
 import { useLocation, useRoutes } from "react-router";
-import Header from "./layouts/Header.jsx";
-import routes from "./routes/routes.jsx";
-import Footer from "./layouts/Footer.jsx";
+import Header from "./layouts/home/Header.jsx";
+import routes from "./routes/home/routes.jsx";
+import Footer from "./layouts/home/Footer.jsx";
 import { useEffect } from "react";
 
 function App() {
