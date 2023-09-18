@@ -9,7 +9,7 @@ const Index = () => {
     return (
         <>
             <div className="container">
-                <Breadcrumbs />
+                <Breadcrumbs subs={["Stays", "New Zealand", "South Island"]} />
             </div>
             <ProductHeader />
             <ProductDetail />

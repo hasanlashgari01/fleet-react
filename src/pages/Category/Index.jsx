@@ -11,7 +11,7 @@ function Category() {
         <>
             {/* <Hero /> */}
             <div className="container">
-                <Breadcrumbs />
+                <Breadcrumbs subs={["Stays", "New Zealand", "South Island"]} />
                 <Header />
                 <Products />
                 <Newsletter />
