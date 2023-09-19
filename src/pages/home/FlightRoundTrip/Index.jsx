@@ -8,7 +8,7 @@ const Index = () => {
             <FlightSearchBox>
                 <Input icon="calendar" placeholder="Fri, May 28" />
             </FlightSearchBox>
-            <FlightRoundMain />
+            <FlightRoundMain isTrip={true} />
         </>
     );
 };

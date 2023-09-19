@@ -10,7 +10,7 @@ function Breadcrumbs({ subs }) {
                 className="inline-flex items-center gap-x-3 py-3 px-4 hover:bg-neutral-6 dark:hover:bg-neutral-3 text-neutral-2 dark:text-neutral-8 font-DMSansBold text-sm/4 border-2 border-neutral-6 dark:border-neutral-3 rounded-full transition-colors duration-300"
             >
                 <svg className="w-6 h-6 text-neutral-5">
-                    <use href="#arrow-right-simple"></use>
+                    <use href="#arrow-left-simple"></use>
                 </svg>
                 Go home
             </Link>
