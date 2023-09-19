@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Breadcrumbs from "./Breadcrumbs";
 import FilterDropdown from "./FilterDropdown";
 import FlightCard from "./FlightCard/Index";
