@@ -50,7 +50,7 @@ const FlightRoundMain = ({ isTrip }) => {
             </>
             <section className="container flex flex-col lg:flex-row gap-x-20 py-8 lg:py-20 2xl:pt-16 2xl:pb-34">
                 <aside
-                    className={`flex-col gap-2 flex-initial lg:basis-64 lg:h-3 lg:flex transition-all duration-150 ease-linear 
+                    className={`sticky top-0 flex-col gap-2 flex-initial lg:basis-64 lg:h-3 lg:flex transition-all duration-150 ease-linear 
                         ${showAdvancedFilter ? "h-3 mb-8" : "h-0 mb-0"}`}
                 >
                     <InputRange />
@@ -58,8 +58,8 @@ const FlightRoundMain = ({ isTrip }) => {
                 </aside>
                 <main className="flex-auto space-y-8">
                     {isTrip
-                        ? [0, 1, 2, 3, 4].map((card) => <FlightCard isTrip={isTrip} />)
-                        : [0, 1, 2, 3, 4].map((card) => <FlightCard />)}
+                        ? [0, 1, 2, 3, 4].map(() => <FlightCard isTrip={isTrip} />)
+                        : [0, 1, 2, 3, 4].map(() => <FlightCard />)}
                 </main>
             </section>
         </div>
