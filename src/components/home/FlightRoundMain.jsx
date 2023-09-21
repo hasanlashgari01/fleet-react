@@ -2,6 +2,7 @@ import { useState } from "react";
 import Breadcrumbs from "./Breadcrumbs";
 import FilterDropdown from "./FilterDropdown";
 import FlightCard from "./FlightCard/Index";
+import InputRange from "./InputRange";
 
 const FlightRoundMain = ({ isTrip }) => {
     const [showAdvancedFilter, setShowAdvancedFilter] = useState(false);
@@ -49,9 +50,12 @@ const FlightRoundMain = ({ isTrip }) => {
             </>
             <section className="container flex flex-col lg:flex-row gap-x-20 py-8 lg:py-20 2xl:pt-16 2xl:pb-34">
                 <aside
-                    className={`flex-initial lg:basis-64 bg-red-300 lg:h-3 lg:flex transition-all duration-150 ease-linear 
+                    className={`flex-col gap-2 flex-initial lg:basis-64 lg:h-3 lg:flex transition-all duration-150 ease-linear 
                         ${showAdvancedFilter ? "h-3 mb-8" : "h-0 mb-0"}`}
-                ></aside>
+                >
+                    <InputRange />
+                    <InputRange />
+                </aside>
                 <main className="flex-auto space-y-8">
                     {isTrip
                         ? [0, 1, 2, 3, 4].map((card) => <FlightCard isTrip={isTrip} />)
