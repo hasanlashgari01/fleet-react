@@ -1,6 +1,6 @@
 const HostInfo = () => {
     return (
-        <div className="flex items-center lg:mt-2">
+        <div className="flex items-center">
             <svg className="w-5 h-5">
                 <use href="#star"></use>
             </svg>
